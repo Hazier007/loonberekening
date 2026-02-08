@@ -200,6 +200,40 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Onze andere tools */}
+      <section className="py-16 bg-slate-50 border-t border-gray-100">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">Onze andere tools</h2>
+            <p className="text-gray-500">Handige gratis calculators en tools voor België.</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {[
+              { href: 'https://btw-calculator.be', title: 'BTW Calculator', desc: 'BTW berekenen in België', icon: '🧾' },
+              { href: 'https://interesten.be', title: 'Interesten Berekenen', desc: 'Rente en interesten berekenen', icon: '💰' },
+              { href: 'https://datumberekenen.be', title: 'Datum Berekenen', desc: 'Datumverschillen berekenen', icon: '📅' },
+              { href: 'https://huurrendementcalculator.be', title: 'Huurrendement Calculator', desc: 'Rendement vastgoed berekenen', icon: '🏠' },
+              { href: 'https://factuurfinanciering.be', title: 'Factuurfinanciering', desc: 'Factuurfinanciering vergelijken', icon: '📄' },
+              { href: 'https://buitendrogen.be', title: 'Buitendrogen', desc: 'Droogtijden berekenen', icon: '☀️' },
+            ].map((tool) => (
+              <a
+                key={tool.href}
+                href={tool.href}
+                target="_blank"
+                rel="noopener"
+                className="group flex items-start gap-3 bg-white rounded-xl border border-gray-100 hover:border-teal-200 p-4 card-hover"
+              >
+                <span className="text-xl mt-0.5">{tool.icon}</span>
+                <div>
+                  <h3 className="font-semibold text-gray-900 text-sm group-hover:text-teal-700 transition-colors">{tool.title}</h3>
+                  <p className="text-xs text-gray-500 mt-0.5">{tool.desc}</p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Bottom CTA */}
       <section className="py-16 bg-teal-800">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
