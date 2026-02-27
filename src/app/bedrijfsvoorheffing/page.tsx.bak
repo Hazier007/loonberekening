@@ -12,13 +12,13 @@ export default function BedrijfsvoorheffingPage() {
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Bedrijfsvoorheffing' }]} />
       <article className="prose prose-lg max-w-none">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">Bedrijfsvoorheffing in België: Complete Gids</h1>
+        <h1>Bedrijfsvoorheffing in België: Complete Gids</h1>
 
-        <div className="bg-gradient-to-r from-teal-50 to-blue-50 rounded-2xl p-6 mb-8 border border-teal-100"><p className="text-lg text-gray-700 leading-relaxed mb-0">
+        <p className="lead">
           De bedrijfsvoorheffing is het voorschot op je personenbelasting dat maandelijks op je loon wordt ingehouden. Het is doorgaans de grootste inhouding na de RSZ-bijdrage en bepaalt in grote mate hoeveel netto je overhoudt. In dit artikel leggen we uit hoe de bedrijfsvoorheffing berekend wordt, welke verminderingen er bestaan, en hoe je ervoor kunt zorgen dat je niet te veel of te weinig betaalt.
-        </p></div>
+        </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Wat is bedrijfsvoorheffing?</h2>
+        <h2>Wat is bedrijfsvoorheffing?</h2>
         <p>
           De bedrijfsvoorheffing (BV) is een <strong>maandelijks ingehouden voorschot</strong> op de personenbelasting die je jaarlijks verschuldigd bent. Je werkgever is wettelijk verplicht dit bedrag in te houden op je loon en door te storten aan de fiscus.
         </p>
@@ -26,7 +26,7 @@ export default function BedrijfsvoorheffingPage() {
           Het woord &quot;voorheffing&quot; geeft aan dat het om een voorafbetaling gaat. Bij je jaarlijkse belastingaangifte wordt de definitieve belasting berekend. De reeds betaalde bedrijfsvoorheffing wordt daarvan afgetrokken. Heb je te veel betaald, dan krijg je geld terug. Heb je te weinig betaald, dan moet je bijbetalen.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Hoe wordt de bedrijfsvoorheffing berekend?</h2>
+        <h2>Hoe wordt de bedrijfsvoorheffing berekend?</h2>
         <p>
           De berekening van de bedrijfsvoorheffing is complex en houdt rekening met meerdere factoren:
         </p>
@@ -39,7 +39,7 @@ export default function BedrijfsvoorheffingPage() {
           <li><strong>Andere verminderingen</strong> — handicap, groepsverzekering, enz.</li>
         </ol>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Bedrijfsvoorheffing per loonniveau</h2>
+        <h2>Bedrijfsvoorheffing per loonniveau</h2>
         <p>Hieronder een overzicht van de indicatieve maandelijkse bedrijfsvoorheffing voor een alleenstaande zonder kinderen:</p>
         <table>
           <thead><tr><th>Bruto maandloon</th><th>RSZ</th><th>Belastbaar</th><th>BV (indicatief)</th></tr></thead>
@@ -53,7 +53,7 @@ export default function BedrijfsvoorheffingPage() {
           </tbody>
         </table>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Verminderingen op de bedrijfsvoorheffing</h2>
+        <h2>Verminderingen op de bedrijfsvoorheffing</h2>
         <p>Er bestaan verschillende verminderingen die je bedrijfsvoorheffing kunnen verlagen:</p>
 
         <h3>Kinderen ten laste</h3>
@@ -71,7 +71,7 @@ export default function BedrijfsvoorheffingPage() {
           Werknemers met een erkende handicap genieten van een verhoogde belastingvrije som, wat resulteert in een lagere bedrijfsvoorheffing.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Bedrijfsvoorheffing vs personenbelasting</h2>
+        <h2>Bedrijfsvoorheffing vs personenbelasting</h2>
         <p>
           Een veel voorkomend misverstand is dat de bedrijfsvoorheffing gelijkstaat aan je definitieve belasting. Dat is niet het geval. De bedrijfsvoorheffing is slechts een <strong>benadering</strong>. Bij je jaarlijkse belastingaangifte wordt het verschil verrekend.
         </p>
@@ -88,7 +88,7 @@ export default function BedrijfsvoorheffingPage() {
           <li>Je ontving belastbare voordelen (bedrijfswagen, enz.) waarop te weinig BV werd berekend</li>
         </ul>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Bedrijfsvoorheffing op vakantiegeld en premies</h2>
+        <h2>Bedrijfsvoorheffing op vakantiegeld en premies</h2>
         <p>
           Op je <Link href="/vakantiegeld-berekenen">vakantiegeld</Link> en <Link href="/eindejaarspremie">eindejaarspremie</Link> wordt ook bedrijfsvoorheffing ingehouden, maar aan een <strong>vast tarief</strong> in plaats van het progressieve systeem:
         </p>
@@ -97,7 +97,7 @@ export default function BedrijfsvoorheffingPage() {
           <li><strong>Eindejaarspremie:</strong> volgens de gewone progressieve schalen</li>
         </ul>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Tips om je bedrijfsvoorheffing te optimaliseren</h2>
+        <h2>Tips om je bedrijfsvoorheffing te optimaliseren</h2>
         <ul>
           <li>Zorg dat je werkgever je correcte gezinstoestand kent (gehuwd, kinderen ten laste)</li>
           <li>Meld veranderingen (geboorte, scheiding, samenwonen) direct aan je werkgever</li>
@@ -108,7 +108,7 @@ export default function BedrijfsvoorheffingPage() {
         <p>
           Bereken je bedrijfsvoorheffing precies met onze <Link href="/calculator">bruto-netto calculator</Link>.
         </p>
-      <div className="bg-gradient-to-br from-teal-700 to-teal-900 rounded-2xl p-8 text-white shadow-2xl mt-12"><div className="text-center mb-6"><h2 className="text-3xl font-bold mb-3">Bereken je nettoloon</h2><p className="text-teal-100 text-lg max-w-2xl mx-auto">Gebruik onze gratis calculator voor een gedetailleerde berekening op maat van jouw situatie.</p></div><div className="flex justify-center"><Link href="/calculator" className="inline-flex items-center gap-2 bg-white text-teal-800 font-bold px-8 py-4 rounded-xl hover:bg-teal-50 transition-colors shadow-lg text-lg"><span>Start Calculator</span><svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg></Link></div></div></article>
+      </article>
     </div>
   );
 }

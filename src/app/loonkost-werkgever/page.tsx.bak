@@ -12,13 +12,13 @@ export default function LoonkostWerkgeverPage() {
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Loonkost Werkgever' }]} />
       <article className="prose prose-lg max-w-none">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">Loonkost Werkgever in België: Wat Kost een Werknemer Echt?</h1>
+        <h1>Loonkost Werkgever in België: Wat Kost een Werknemer Echt?</h1>
 
-        <div className="bg-gradient-to-r from-teal-50 to-blue-50 rounded-2xl p-6 mb-8 border border-teal-100"><p className="text-lg text-gray-700 leading-relaxed mb-0">
+        <p className="lead">
           Het brutoloon dat een werknemer ontvangt, is slechts een deel van de totale kost voor de werkgever. In België betaalt de werkgever bovenop het bruto nog aanzienlijke sociale bijdragen, verzekeringen en andere kosten. De totale loonkost kan tot <strong>130-140%</strong> van het brutoloon bedragen. In dit artikel bespreken we alle componenten van de loonkost.
-        </p></div>
+        </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Overzicht loonkost</h2>
+        <h2>Overzicht loonkost</h2>
         <p>De totale loonkost voor een werkgever bestaat uit meerdere componenten:</p>
 
         <h3>1. Het brutoloon</h3>
@@ -55,7 +55,7 @@ export default function LoonkostWerkgeverPage() {
           <li><strong>Ecocheques:</strong> Tot €250 per jaar</li>
         </ul>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Voorbeeldberekening: totale loonkost</h2>
+        <h2>Voorbeeldberekening: totale loonkost</h2>
         <p>Wat kost een werknemer met een brutoloon van €3.000 per maand werkelijk?</p>
         <table>
           <thead><tr><th>Kostenpost</th><th>Maandelijks</th><th>Jaarlijks</th></tr></thead>
@@ -73,7 +73,7 @@ export default function LoonkostWerkgeverPage() {
           De totale loonkost bedraagt in dit voorbeeld <strong>136%</strong> van het brutoloon. De werknemer ontvangt netto slechts ~€2.042 (68% van bruto), terwijl de werkgever €4.091 betaalt. Het verschil — meer dan €2.000 per maand — gaat naar sociale bijdragen, belastingen en verzekeringen.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Loonkost per brutoloon</h2>
+        <h2>Loonkost per brutoloon</h2>
         <table>
           <thead><tr><th>Bruto</th><th>Werkgevers RSZ</th><th>Totale loonkost</th><th>Netto werknemer</th></tr></thead>
           <tbody>
@@ -86,7 +86,7 @@ export default function LoonkostWerkgeverPage() {
           </tbody>
         </table>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Verminderingen voor werkgevers</h2>
+        <h2>Verminderingen voor werkgevers</h2>
         <p>De Belgische overheid biedt verschillende verminderingen aan om de loonkost te drukken:</p>
 
         <h3>Structurele vermindering</h3>
@@ -102,7 +102,7 @@ export default function LoonkostWerkgeverPage() {
           <li><strong>Langdurig werklozen:</strong> Activeringsmaatregelen met RSZ-vermindering</li>
         </ul>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">België: duurste arbeidsmarkt?</h2>
+        <h2>België: duurste arbeidsmarkt?</h2>
         <p>
           België behoort tot de landen met de hoogste loonkosten in de Europese Unie. De combinatie van relatief hoge bruto lonen én hoge werkgeversbijdragen maakt arbeid duur. Dit is een belangrijke reden waarom het debat over loonkostcompetitiviteit in België voortdurend terugkomt.
         </p>
@@ -120,7 +120,7 @@ export default function LoonkostWerkgeverPage() {
         <p>
           Bereken je eigen nettoloon met onze <Link href="/calculator">gratis calculator</Link>, of lees meer over de <Link href="/rsz-bijdrage">RSZ-bijdrage</Link> en <Link href="/belastingschijven-belgie">belastingschijven</Link>.
         </p>
-      <div className="bg-gradient-to-br from-teal-700 to-teal-900 rounded-2xl p-8 text-white shadow-2xl mt-12"><div className="text-center mb-6"><h2 className="text-3xl font-bold mb-3">Bereken je nettoloon</h2><p className="text-teal-100 text-lg max-w-2xl mx-auto">Gebruik onze gratis calculator voor een gedetailleerde berekening op maat van jouw situatie.</p></div><div className="flex justify-center"><Link href="/calculator" className="inline-flex items-center gap-2 bg-white text-teal-800 font-bold px-8 py-4 rounded-xl hover:bg-teal-50 transition-colors shadow-lg text-lg"><span>Start Calculator</span><svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg></Link></div></div></article>
+      </article>
     </div>
   );
 }

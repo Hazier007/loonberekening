@@ -14,13 +14,13 @@ export default function GemiddeldLoonPage() {
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Gemiddeld Loon België' }]} />
       <article className="prose prose-lg max-w-none">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">Gemiddeld Loon in België 2026</h1>
+        <h1>Gemiddeld Loon in België 2026</h1>
 
-        <div className="bg-gradient-to-r from-teal-50 to-blue-50 rounded-2xl p-6 mb-8 border border-teal-100"><p className="text-lg text-gray-700 leading-relaxed mb-0">
+        <p className="lead">
           Hoeveel verdient de gemiddelde Belg? Het gemiddelde bruto maandloon in België bedraagt ongeveer <strong>€3.886</strong> (bron: Statbel, FOD Economie). Na aftrek van RSZ-bijdragen, bedrijfsvoorheffing en bijzondere bijdrage sociale zekerheid hou je daar netto gemiddeld <strong>€2.364</strong> van over. Maar deze cijfers vertellen niet het hele verhaal — er zijn grote verschillen per sector, regio, leeftijd en geslacht.
-        </p></div>
+        </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Gemiddeld loon per sector</h2>
+        <h2>Gemiddeld loon per sector</h2>
         <p>
           De sector waarin je werkt, heeft een enorme impact op je salaris. Hieronder een overzicht van de gemiddelde bruto maandlonen per sector in België:
         </p>
@@ -51,7 +51,7 @@ export default function GemiddeldLoonPage() {
           </table>
         </div>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Gemiddeld loon per regio</h2>
+        <h2>Gemiddeld loon per regio</h2>
         <p>
           Er bestaan aanzienlijke regionale loonverschillen in België. Werknemers in Brussel en Vlaanderen verdienen gemiddeld meer dan hun collega&apos;s in Wallonië.
         </p>
@@ -68,7 +68,7 @@ export default function GemiddeldLoonPage() {
           De hogere lonen in Brussel worden deels verklaard door de concentratie van hoofdkwartieren, internationale instellingen en de financiële sector. In Vlaanderen drijven de haven van Antwerpen, de chemische industrie en de tech-sector de lonen op.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Gemiddeld loon per leeftijd</h2>
+        <h2>Gemiddeld loon per leeftijd</h2>
         <p>
           Anciënniteit speelt een belangrijke rol in het Belgische loonsysteem. Lonen stijgen doorgaans met de leeftijd tot ze een plateau bereiken rond 50-55 jaar.
         </p>
@@ -86,7 +86,7 @@ export default function GemiddeldLoonPage() {
           Het verschil tussen een starter (18-24) en een ervaren werknemer (45-54) bedraagt bijna €2.000 bruto per maand. Dit komt door de Belgische barema&apos;s die anciënniteit belonen met automatische loonsverhogingen.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Gemiddeld loon per geslacht (loonkloof)</h2>
+        <h2>Gemiddeld loon per geslacht (loonkloof)</h2>
         <p>
           Ondanks wetgeving rond gelijk loon voor gelijk werk, bestaat er in België nog steeds een <strong>loonkloof</strong> tussen mannen en vrouwen:
         </p>
@@ -101,7 +101,7 @@ export default function GemiddeldLoonPage() {
           De loonkloof wordt deels verklaard door het feit dat vrouwen vaker deeltijds werken, vaker in lager betaalde sectoren werken, en minder vaak in leidinggevende functies zitten. De kloof op uurbasis (voor dezelfde functie) is kleiner maar bestaat nog steeds.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Gemiddeld loon per opleidingsniveau</h2>
+        <h2>Gemiddeld loon per opleidingsniveau</h2>
         <table>
           <thead><tr><th>Opleidingsniveau</th><th>Gemiddeld bruto maandloon</th></tr></thead>
           <tbody>
@@ -116,7 +116,7 @@ export default function GemiddeldLoonPage() {
           Een hoger diploma betaalt zich duidelijk uit in het Belgische loonsysteem. Het verschil tussen iemand zonder diploma en een master-houder bedraagt gemiddeld bijna €1.800 bruto per maand.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Mediaan vs gemiddeld loon</h2>
+        <h2>Mediaan vs gemiddeld loon</h2>
         <p>
           Het is belangrijk om het verschil te kennen tussen het <strong>gemiddeld</strong> en het <strong>mediaan</strong> loon:
         </p>
@@ -128,7 +128,7 @@ export default function GemiddeldLoonPage() {
           Het mediaan loon geeft een beter beeld van wat een &quot;typische&quot; werknemer verdient, omdat extreem hoge lonen het gemiddelde omhoog trekken.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Hoe verhoud jij je tot het gemiddelde?</h2>
+        <h2>Hoe verhoud jij je tot het gemiddelde?</h2>
         <p>
           Wil je weten hoe jouw loon zich verhoudt tot het Belgische gemiddelde? Gebruik onze <Link href="/calculator">bruto-netto calculator</Link> om je exacte nettoloon te berekenen, of bekijk de sectorpagina&apos;s voor een vergelijking met collega&apos;s in jouw sector:
         </p>
@@ -141,7 +141,7 @@ export default function GemiddeldLoonPage() {
         <p>
           Of bekijk direct hoeveel netto je overhoudt bij een specifiek brutoloon: <Link href="/loon/3000">€3.000 bruto</Link>, <Link href="/loon/4000">€4.000 bruto</Link>, <Link href="/loon/5000">€5.000 bruto</Link>.
         </p>
-      <div className="bg-gradient-to-br from-teal-700 to-teal-900 rounded-2xl p-8 text-white shadow-2xl mt-12"><div className="text-center mb-6"><h2 className="text-3xl font-bold mb-3">Bereken je nettoloon</h2><p className="text-teal-100 text-lg max-w-2xl mx-auto">Gebruik onze gratis calculator voor een gedetailleerde berekening op maat van jouw situatie.</p></div><div className="flex justify-center"><Link href="/calculator" className="inline-flex items-center gap-2 bg-white text-teal-800 font-bold px-8 py-4 rounded-xl hover:bg-teal-50 transition-colors shadow-lg text-lg"><span>Start Calculator</span><svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg></Link></div></div></article>
+      </article>
     </div>
   );
 }

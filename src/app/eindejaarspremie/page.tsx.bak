@@ -12,13 +12,13 @@ export default function EindejaarspremiePage() {
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Eindejaarspremie' }]} />
       <article className="prose prose-lg max-w-none">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">Eindejaarspremie in België: 13e Maand Uitgelegd</h1>
+        <h1>Eindejaarspremie in België: 13e Maand Uitgelegd</h1>
 
-        <div className="bg-gradient-to-r from-teal-50 to-blue-50 rounded-2xl p-6 mb-8 border border-teal-100"><p className="text-lg text-gray-700 leading-relaxed mb-0">
+        <p className="lead">
           De eindejaarspremie, ook wel de &quot;13e maand&quot; genoemd, is een jaarlijkse extra uitbetaling die de meeste werknemers in België ontvangen in december. Hoewel het geen wettelijk recht is, is de eindejaarspremie in de praktijk vastgelegd in sectorale collectieve arbeidsovereenkomsten en is ze voor de overgrote meerderheid van de Belgische werknemers een zekerheid.
-        </p></div>
+        </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Wat is de eindejaarspremie?</h2>
+        <h2>Wat is de eindejaarspremie?</h2>
         <p>
           De eindejaarspremie is een <strong>extra vergoeding</strong> die werknemers ontvangen bovenop hun gewone maandlonen en het vakantiegeld. Het bedrag en de voorwaarden worden bepaald door het <strong>paritair comité</strong> (de sectorale overlegorganen) van je sector.
         </p>
@@ -26,7 +26,7 @@ export default function EindejaarspremiePage() {
           In veel gevallen bedraagt de eindejaarspremie een volledig bruto maandloon (vandaar de naam &quot;13e maand&quot;), maar het exacte bedrag varieert per sector. Sommige sectoren geven een vast bedrag, andere een percentage van het jaarloon.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Bedrag per sector</h2>
+        <h2>Bedrag per sector</h2>
         <p>Hieronder een overzicht van typische eindejaarspremies per sector:</p>
         <table>
           <thead><tr><th>Sector (PC)</th><th>Eindejaarspremie</th></tr></thead>
@@ -44,12 +44,12 @@ export default function EindejaarspremiePage() {
           </tbody>
         </table>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Wanneer wordt de eindejaarspremie uitbetaald?</h2>
+        <h2>Wanneer wordt de eindejaarspremie uitbetaald?</h2>
         <p>
           De meeste werkgevers betalen de eindejaarspremie uit in <strong>december</strong>, vaak samen met of kort voor het decemberloon. Sommige sectoren voorzien uitbetaling via een <strong>fonds voor bestaanszekerheid</strong> (zoals in de bouw), waarbij de timing kan verschillen.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Belasting op de eindejaarspremie</h2>
+        <h2>Belasting op de eindejaarspremie</h2>
         <p>
           De eindejaarspremie wordt beschouwd als loon en is dus onderworpen aan dezelfde inhoudingen als je gewone loon:
         </p>
@@ -73,7 +73,7 @@ export default function EindejaarspremiePage() {
           Door de hoge bedrijfsvoorheffing op de eindejaarspremie (deze valt bovenop je gewone jaarinkomen en wordt dus vaak aan een hoger marginaal tarief belast), hou je netto relatief minder over dan van een gewoon maandloon.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Voorwaarden voor de eindejaarspremie</h2>
+        <h2>Voorwaarden voor de eindejaarspremie</h2>
         <p>De precieze voorwaarden hangen af van je sector, maar typisch geldt:</p>
         <ul>
           <li><strong>Anciënniteit:</strong> Vaak moet je een minimumperiode gewerkt hebben (bv. 6 maanden in het lopende jaar)</li>
@@ -82,7 +82,7 @@ export default function EindejaarspremiePage() {
           <li><strong>Ontslag:</strong> Bij ontslag door de werkgever heb je doorgaans recht op een pro rata eindejaarspremie. Bij ontslag door de werknemer hangt het af van de sectorale CAO.</li>
         </ul>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Eindejaarspremie en vakantiegeld</h2>
+        <h2>Eindejaarspremie en vakantiegeld</h2>
         <p>
           De eindejaarspremie staat los van het <Link href="/vakantiegeld-berekenen">vakantiegeld</Link>. Als bediende ontvang je dus:
         </p>
@@ -95,7 +95,7 @@ export default function EindejaarspremiePage() {
           Je totale jaarlijkse bruto vergoeding bedraagt dus ongeveer <strong>13,92 keer</strong> je bruto maandloon (12 + 0,92 + 1).
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Heb ik recht op een eindejaarspremie?</h2>
+        <h2>Heb ik recht op een eindejaarspremie?</h2>
         <p>
           Er is <strong>geen wettelijk recht</strong> op een eindejaarspremie in België. Het recht vloeit voort uit:
         </p>
@@ -112,7 +112,7 @@ export default function EindejaarspremiePage() {
         <p>
           Bereken je nettoloon inclusief alle premies met onze <Link href="/calculator">gratis calculator</Link>.
         </p>
-      <div className="bg-gradient-to-br from-teal-700 to-teal-900 rounded-2xl p-8 text-white shadow-2xl mt-12"><div className="text-center mb-6"><h2 className="text-3xl font-bold mb-3">Bereken je nettoloon</h2><p className="text-teal-100 text-lg max-w-2xl mx-auto">Gebruik onze gratis calculator voor een gedetailleerde berekening op maat van jouw situatie.</p></div><div className="flex justify-center"><Link href="/calculator" className="inline-flex items-center gap-2 bg-white text-teal-800 font-bold px-8 py-4 rounded-xl hover:bg-teal-50 transition-colors shadow-lg text-lg"><span>Start Calculator</span><svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg></Link></div></div></article>
+      </article>
     </div>
   );
 }

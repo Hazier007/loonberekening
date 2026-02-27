@@ -12,13 +12,13 @@ export default function VakantiegeldPage() {
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Vakantiegeld Berekenen' }]} />
       <article className="prose prose-lg max-w-none">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">Vakantiegeld Berekenen in België</h1>
+        <h1>Vakantiegeld Berekenen in België</h1>
 
-        <div className="bg-gradient-to-r from-teal-50 to-blue-50 rounded-2xl p-6 mb-8 border border-teal-100"><p className="text-lg text-gray-700 leading-relaxed mb-0">
+        <p className="lead">
           Elk jaar kijken werknemers in België uit naar hun vakantiegeld — dat extra bedrag bovenop je gewone loon dat je ontvangt voor je vakantiedagen. Maar hoe wordt vakantiegeld precies berekend? Wat is het verschil tussen enkel en dubbel vakantiegeld? En wanneer wordt het uitbetaald? In deze complete gids leggen we alles uit.
-        </p></div>
+        </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Enkel vs dubbel vakantiegeld</h2>
+        <h2>Enkel vs dubbel vakantiegeld</h2>
         <p>In België bestaan er twee vormen van vakantiegeld:</p>
 
         <h3>Enkel vakantiegeld</h3>
@@ -31,7 +31,7 @@ export default function VakantiegeldPage() {
           Het <strong>dubbel vakantiegeld</strong> is een extra premie die overeenkomt met ongeveer 92% van je bruto maandloon. Het idee is dat je extra geld nodig hebt om je vakantie te betalen. Het dubbel vakantiegeld is een jaarlijkse extra uitbetaling bovenop je gewone loon.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Berekening voor bedienden</h2>
+        <h2>Berekening voor bedienden</h2>
         <p>
           Voor bedienden (werknemers met een maandloon) wordt het vakantiegeld als volgt berekend:
         </p>
@@ -63,7 +63,7 @@ export default function VakantiegeldPage() {
           </tbody>
         </table>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Berekening voor arbeiders</h2>
+        <h2>Berekening voor arbeiders</h2>
         <p>
           Voor arbeiders werkt het systeem anders. Het vakantiegeld wordt niet door de werkgever betaald, maar door een <strong>vakantiekas</strong> (de Rijksdienst voor Jaarlijkse Vakantie of een sectorale kas).
         </p>
@@ -75,7 +75,7 @@ export default function VakantiegeldPage() {
           <li>Dubbel vakantiegeld: 7,69%</li>
         </ul>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Wanneer wordt vakantiegeld uitbetaald?</h2>
+        <h2>Wanneer wordt vakantiegeld uitbetaald?</h2>
         <h3>Bedienden</h3>
         <ul>
           <li><strong>Enkel vakantiegeld:</strong> Elke maand, als doorbetaling van je loon tijdens vakantiedagen</li>
@@ -87,7 +87,7 @@ export default function VakantiegeldPage() {
           Arbeiders ontvangen hun volledig vakantiegeld (enkel + dubbel) in één keer via de vakantiekas. De uitbetaling gebeurt vóór de start van de hoofdvakantie, meestal tussen <strong>mei en juni</strong>.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Belasting op vakantiegeld</h2>
+        <h2>Belasting op vakantiegeld</h2>
         <p>
           Op het dubbel vakantiegeld wordt een <strong>bijzonder tarief bedrijfsvoorheffing</strong> ingehouden:
         </p>
@@ -99,7 +99,7 @@ export default function VakantiegeldPage() {
           Ook de <Link href="/rsz-bijdrage">RSZ-bijdrage</Link> van 13,07% is verschuldigd op het vakantiegeld. Hierdoor hou je netto aanzienlijk minder over dan het bruto bedrag.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Vertrekvakantiegeld bij ontslag</h2>
+        <h2>Vertrekvakantiegeld bij ontslag</h2>
         <p>
           Als je van werkgever verandert of ontslagen wordt, heb je recht op <strong>vertrekvakantiegeld</strong>. Dit omvat het vakantiegeld voor de dagen die je bij je vorige werkgever hebt opgebouwd maar nog niet hebt opgenomen.
         </p>
@@ -107,12 +107,12 @@ export default function VakantiegeldPage() {
           Let op: het vertrekvakantiegeld dat je van je vorige werkgever ontvangt, wordt verrekend door je nieuwe werkgever. Je krijgt het niet &quot;dubbel&quot;.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Vakantiegeld en deeltijdse tewerkstelling</h2>
+        <h2>Vakantiegeld en deeltijdse tewerkstelling</h2>
         <p>
           Als je deeltijds werkt, wordt je vakantiegeld pro rata berekend op basis van je tewerkstellingsbreuk. Werk je 80% (4/5), dan heb je recht op 80% van het vakantiegeld van een voltijdse werknemer.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Veelgestelde vragen</h2>
+        <h2>Veelgestelde vragen</h2>
         <h3>Heb ik recht op vakantiegeld in mijn eerste jaar?</h3>
         <p>
           Ja, via het systeem van &quot;Europese vakantie&quot; of &quot;aanvullende vakantie&quot; kun je ook in je eerste werkjaar vakantiedagen opnemen. Het vakantiegeld wordt dan voorgeschoten en later verrekend.
@@ -126,7 +126,7 @@ export default function VakantiegeldPage() {
         <p>
           Bereken je volledig nettoloon inclusief alle premies met onze <Link href="/calculator">gratis calculator</Link>.
         </p>
-      <div className="bg-gradient-to-br from-teal-700 to-teal-900 rounded-2xl p-8 text-white shadow-2xl mt-12"><div className="text-center mb-6"><h2 className="text-3xl font-bold mb-3">Bereken je nettoloon</h2><p className="text-teal-100 text-lg max-w-2xl mx-auto">Gebruik onze gratis calculator voor een gedetailleerde berekening op maat van jouw situatie.</p></div><div className="flex justify-center"><Link href="/calculator" className="inline-flex items-center gap-2 bg-white text-teal-800 font-bold px-8 py-4 rounded-xl hover:bg-teal-50 transition-colors shadow-lg text-lg"><span>Start Calculator</span><svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg></Link></div></div></article>
+      </article>
     </div>
   );
 }

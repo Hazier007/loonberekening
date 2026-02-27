@@ -12,13 +12,13 @@ export default function MinimumloonPage() {
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Minimumloon België' }]} />
       <article className="prose prose-lg max-w-none">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">Minimumloon in België 2026: GGMMI Uitgelegd</h1>
+        <h1>Minimumloon in België 2026: GGMMI Uitgelegd</h1>
 
-        <div className="bg-gradient-to-r from-teal-50 to-blue-50 rounded-2xl p-6 mb-8 border border-teal-100"><p className="text-lg text-gray-700 leading-relaxed mb-0">
+        <p className="lead">
           België kent een wettelijk minimumloon, officieel het <strong>Gewaarborgd Gemiddeld Minimum Maandinkomen (GGMMI)</strong> genoemd. Dit is het absolute minimumbedrag dat een voltijdse werknemer in de private sector moet verdienen. In dit artikel bespreken we het actuele bedrag, hoe het geïndexeerd wordt, en wat je er netto van overhoudt.
-        </p></div>
+        </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Wat is het GGMMI?</h2>
+        <h2>Wat is het GGMMI?</h2>
         <p>
           Het GGMMI staat voor <strong>Gewaarborgd Gemiddeld Minimum Maandinkomen</strong>. Het is het wettelijk minimumloon dat vastgelegd is door de Nationale Arbeidsraad (NAR) via collectieve arbeidsovereenkomst (CAO). Elke werkgever in België is verplicht minstens dit bedrag te betalen aan voltijdse werknemers.
         </p>
@@ -26,7 +26,7 @@ export default function MinimumloonPage() {
           Het GGMMI is een <strong>bruto</strong> bedrag. Na aftrek van RSZ-bijdragen en bedrijfsvoorheffing hou je netto een lager bedrag over. Dankzij de <Link href="/werkbonus">werkbonus</Link> is het verschil tussen bruto en netto bij het minimumloon relatief klein.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Actueel minimumloon 2025-2026</h2>
+        <h2>Actueel minimumloon 2025-2026</h2>
         <p>Sinds 1 april 2024 bedraagt het GGMMI:</p>
         <div className="not-prose bg-teal-50 border-2 border-teal-200 rounded-xl p-6 mb-6 text-center">
           <div className="text-sm text-teal-600 mb-1">Bruto minimumloon (GGMMI)</div>
@@ -45,7 +45,7 @@ export default function MinimumloonPage() {
           </tbody>
         </table>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Netto minimumloon</h2>
+        <h2>Netto minimumloon</h2>
         <p>
           Dankzij de werkbonus hou je als werknemer op het minimumloon relatief veel netto over. De werkbonus vermindert je RSZ-bijdrage aanzienlijk en je geniet ook van een fiscaal voordeel.
         </p>
@@ -64,7 +64,7 @@ export default function MinimumloonPage() {
           Dit resulteert in een netto/bruto verhouding van ongeveer 90%, wat aanzienlijk gunstiger is dan bij hogere lonen (waar je 60-65% overhoudt). <Link href="/loon/2000">Bekijk de volledige berekening voor €2.000 bruto</Link>.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Minimumloon en indexatie</h2>
+        <h2>Minimumloon en indexatie</h2>
         <p>
           Het GGMMI wordt regelmatig aangepast aan de <Link href="/indexatie-lonen">levensduurte via het indexmechanisme</Link>. Wanneer de spilindex overschreden wordt, stijgen de sociale uitkeringen en overheidslonen automatisch met 2%. Het GGMMI volgt een gelijkaardig mechanisme, hoewel de aanpassing via de NAR verloopt.
         </p>
@@ -81,7 +81,7 @@ export default function MinimumloonPage() {
           </tbody>
         </table>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Sectorale minimumlonen</h2>
+        <h2>Sectorale minimumlonen</h2>
         <p>
           Belangrijk: veel sectoren hebben via paritaire comités <strong>sectorale minimumlonen</strong> vastgelegd die hoger liggen dan het GGMMI. Het GGMMI is dus een absolute ondergrens, maar in de praktijk verdienen de meeste werknemers meer.
         </p>
@@ -94,7 +94,7 @@ export default function MinimumloonPage() {
           <li><Link href="/sector/it-software">IT sector</Link> — minimumloon vanaf ~€2.800 bruto</li>
         </ul>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">België vergeleken met buurlanden</h2>
+        <h2>België vergeleken met buurlanden</h2>
         <table>
           <thead><tr><th>Land</th><th>Bruto minimumloon/maand</th></tr></thead>
           <tbody>
@@ -109,7 +109,7 @@ export default function MinimumloonPage() {
           België heeft één van de hogere minimumlonen in Europa, maar het netto minimumloon wordt beïnvloed door de relatief hoge belastingdruk. Dankzij de werkbonus is het nettoverschil bij lage lonen echter beperkt.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Veelgestelde vragen</h2>
+        <h2>Veelgestelde vragen</h2>
         <h3>Geldt het minimumloon voor studenten?</h3>
         <p>Studentenjobbers hebben recht op minstens het minimumloon, maar genieten van een gunstig RSZ-regime (solidariteitsbijdrage van 2,71% i.p.v. 13,07%) voor maximaal 600 uren per jaar.</p>
 
@@ -119,7 +119,7 @@ export default function MinimumloonPage() {
         <p>
           Bereken je nettoloon op basis van het minimumloon met onze <Link href="/calculator">gratis calculator</Link>.
         </p>
-      <div className="bg-gradient-to-br from-teal-700 to-teal-900 rounded-2xl p-8 text-white shadow-2xl mt-12"><div className="text-center mb-6"><h2 className="text-3xl font-bold mb-3">Bereken je nettoloon</h2><p className="text-teal-100 text-lg max-w-2xl mx-auto">Gebruik onze gratis calculator voor een gedetailleerde berekening op maat van jouw situatie.</p></div><div className="flex justify-center"><Link href="/calculator" className="inline-flex items-center gap-2 bg-white text-teal-800 font-bold px-8 py-4 rounded-xl hover:bg-teal-50 transition-colors shadow-lg text-lg"><span>Start Calculator</span><svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg></Link></div></div></article>
+      </article>
     </div>
   );
 }

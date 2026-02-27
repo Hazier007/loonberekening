@@ -12,13 +12,13 @@ export default function IndexatiePage() {
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Indexatie Lonen' }]} />
       <article className="prose prose-lg max-w-none">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">Automatische Loonindexatie in België</h1>
+        <h1>Automatische Loonindexatie in België</h1>
 
-        <div className="bg-gradient-to-r from-teal-50 to-blue-50 rounded-2xl p-6 mb-8 border border-teal-100"><p className="text-lg text-gray-700 leading-relaxed mb-0">
+        <p className="lead">
           België is één van de weinige landen ter wereld met een systeem van <strong>automatische loonindexatie</strong>. Dit betekent dat lonen automatisch stijgen wanneer de levensduurte toeneemt. Het systeem beschermt de koopkracht van werknemers tegen inflatie, maar is ook onderwerp van politiek debat. In dit artikel leggen we uit hoe het systeem werkt, wanneer lonen stijgen, en wat de voor- en nadelen zijn.
-        </p></div>
+        </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Hoe werkt automatische indexatie?</h2>
+        <h2>Hoe werkt automatische indexatie?</h2>
         <p>
           Het Belgische indexatiesysteem koppelt lonen, sociale uitkeringen en pensioenen aan de <strong>gezondheidsindex</strong>. Wanneer de prijzen stijgen (inflatie), stijgen de lonen mee. Dit gebeurt automatisch, zonder dat vakbonden of werkgevers hierover moeten onderhandelen.
         </p>
@@ -29,7 +29,7 @@ export default function IndexatiePage() {
           <li>De <strong>afgevlakte gezondheidsindex</strong> (gemiddelde van de laatste 4 maanden) wordt vergeleken met de <strong>spilindex</strong>. Wanneer de afgevlakte index de spilindex overschrijdt, worden lonen en uitkeringen aangepast.</li>
         </ol>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">De spilindex</h2>
+        <h2>De spilindex</h2>
         <p>
           De <strong>spilindex</strong> is een drempelbedrag vastgelegd door de overheid. Telkens de afgevlakte gezondheidsindex de spilindex bereikt of overschrijdt, worden de lonen en uitkeringen met <strong>2%</strong> verhoogd.
         </p>
@@ -37,7 +37,7 @@ export default function IndexatiePage() {
           Na elke overschrijding wordt een nieuwe spilindex berekend (2% hoger dan de vorige). Dit creëert een trapgewijze stijging van de lonen.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Wanneer worden lonen geïndexeerd?</h2>
+        <h2>Wanneer worden lonen geïndexeerd?</h2>
         <p>Het tijdstip van de effectieve loonsverhoging verschilt:</p>
         <ul>
           <li><strong>Overheidslonen:</strong> De maand na de overschrijding van de spilindex</li>
@@ -65,7 +65,7 @@ export default function IndexatiePage() {
           De meest voorkomende methode is een jaarlijkse indexatie in januari, gebaseerd op de evolutie van de gezondheidsindex in het voorgaande jaar.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Impact op je loon</h2>
+        <h2>Impact op je loon</h2>
         <p>
           De indexatie beschermt je <strong>koopkracht</strong>. Als de prijzen met 2% stijgen, stijgt je loon ook met ~2%, zodat je in reële termen (koopkracht) niet achteruitgaat.
         </p>
@@ -79,7 +79,7 @@ export default function IndexatiePage() {
           </tbody>
         </table>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Historische indexaties</h2>
+        <h2>Historische indexaties</h2>
         <table>
           <thead><tr><th>Jaar</th><th>Indexatie PC 200 (bedienden)</th></tr></thead>
           <tbody>
@@ -95,7 +95,7 @@ export default function IndexatiePage() {
           De uitzonderlijk hoge indexatie van 2023 (+11,08%) was het gevolg van de energiecrisis en hoge inflatie in 2022.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Voor- en nadelen van automatische indexatie</h2>
+        <h2>Voor- en nadelen van automatische indexatie</h2>
         <h3>Voordelen</h3>
         <ul>
           <li><strong>Koopkrachtbescherming:</strong> Werknemers verliezen geen koopkracht door inflatie</li>
@@ -110,7 +110,7 @@ export default function IndexatiePage() {
           <li><strong>Internationale competitiviteit:</strong> Buurlanden zonder indexatie kunnen goedkoper produceren</li>
         </ul>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">De gezondheidsindex vs consumptieprijsindex</h2>
+        <h2>De gezondheidsindex vs consumptieprijsindex</h2>
         <p>
           Waarom wordt de gezondheidsindex gebruikt en niet de gewone consumptieprijsindex? De gezondheidsindex sluit bepaalde producten uit die sterk in prijs schommelen en/of die de overheid wil ontmoedigen:
         </p>
@@ -126,7 +126,7 @@ export default function IndexatiePage() {
         <p>
           Bereken je actuele nettoloon met onze <Link href="/calculator">gratis calculator</Link>, of bekijk het <Link href="/gemiddeld-loon-belgie">gemiddeld loon in België</Link>.
         </p>
-      <div className="bg-gradient-to-br from-teal-700 to-teal-900 rounded-2xl p-8 text-white shadow-2xl mt-12"><div className="text-center mb-6"><h2 className="text-3xl font-bold mb-3">Bereken je nettoloon</h2><p className="text-teal-100 text-lg max-w-2xl mx-auto">Gebruik onze gratis calculator voor een gedetailleerde berekening op maat van jouw situatie.</p></div><div className="flex justify-center"><Link href="/calculator" className="inline-flex items-center gap-2 bg-white text-teal-800 font-bold px-8 py-4 rounded-xl hover:bg-teal-50 transition-colors shadow-lg text-lg"><span>Start Calculator</span><svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg></Link></div></div></article>
+      </article>
     </div>
   );
 }

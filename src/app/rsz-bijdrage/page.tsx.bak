@@ -13,13 +13,13 @@ export default function RSZBijdragePage() {
       <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'RSZ-Bijdrage' }]} />
 
       <article className="prose prose-lg max-w-none">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">RSZ-Bijdrage in België: Alles Wat je Moet Weten</h1>
+        <h1>RSZ-Bijdrage in België: Alles Wat je Moet Weten</h1>
 
-        <div className="bg-gradient-to-r from-teal-50 to-blue-50 rounded-2xl p-6 mb-8 border border-teal-100"><p className="text-lg text-gray-700 leading-relaxed mb-0">
+        <p className="lead">
           De RSZ-bijdrage is de eerste en grootste inhouding op je brutoloon in België. Als werknemer betaal je 13,07% van je bruto maandloon aan de Rijksdienst voor Sociale Zekerheid. Maar wat is RSZ precies, waar gaat dat geld naartoe, en hoeveel betaalt je werkgever daar nog bovenop? In dit uitgebreide artikel leggen we alles uit.
-        </p></div>
+        </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Wat is de RSZ?</h2>
+        <h2>Wat is de RSZ?</h2>
         <p>
           De <strong>Rijksdienst voor Sociale Zekerheid (RSZ)</strong> — in het Frans ONSS (Office National de Sécurité Sociale) — is de Belgische overheidsinstelling die sociale bijdragen int bij werkgevers en werknemers. Deze bijdragen financieren het Belgische socialezekerheidsstelsel, één van de meest uitgebreide ter wereld.
         </p>
@@ -27,7 +27,7 @@ export default function RSZBijdragePage() {
           De RSZ werd opgericht in 1944 en speelt een centrale rol in het Belgische sociale model. Elke werknemer en werkgever in België is verplicht bijdragen te betalen aan de RSZ. Het systeem is gebaseerd op solidariteit: iedereen draagt bij naargelang zijn inkomen, en iedereen geniet van dezelfde sociale bescherming.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Hoeveel RSZ betaal je als werknemer?</h2>
+        <h2>Hoeveel RSZ betaal je als werknemer?</h2>
         <p>
           Als werknemer wordt automatisch <strong>13,07%</strong> van je brutoloon ingehouden als persoonlijke RSZ-bijdrage. Dit bedrag wordt door je werkgever rechtstreeks doorgestort aan de RSZ vóór je je nettoloon ontvangt.
         </p>
@@ -46,7 +46,7 @@ export default function RSZBijdragePage() {
           </tbody>
         </table>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Hoeveel RSZ betaalt je werkgever?</h2>
+        <h2>Hoeveel RSZ betaalt je werkgever?</h2>
         <p>
           Wat veel werknemers niet weten, is dat hun werkgever bovenop het brutoloon nog een aanzienlijke <strong>patronale RSZ-bijdrage</strong> betaalt. De basiswerkgeversbijdrage bedraagt <strong>ongeveer 25%</strong> van het brutoloon (het exact percentage kan variëren per sector en omvat diverse componenten).
         </p>
@@ -54,7 +54,7 @@ export default function RSZBijdragePage() {
           Dit betekent dat de totale <Link href="/loonkost-werkgever">loonkost voor de werkgever</Link> aanzienlijk hoger is dan het brutoloon dat op je loonbrief staat. Een werknemer met €3.000 bruto kost de werkgever in werkelijkheid ongeveer €3.750 tot €3.900 per maand.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Waar gaat je RSZ-bijdrage naartoe?</h2>
+        <h2>Waar gaat je RSZ-bijdrage naartoe?</h2>
         <p>
           De RSZ-bijdragen worden verdeeld over verschillende takken van de sociale zekerheid:
         </p>
@@ -71,7 +71,7 @@ export default function RSZBijdragePage() {
           Dankzij deze bijdragen geniet je als Belgische werknemer van uitstekende sociale bescherming: bijna volledige terugbetaling van ziekenhuiskosten, werkloosheidsuitkeringen zonder tijdslimiet, een wettelijk pensioen, en nog veel meer.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">De werkbonus: RSZ-vermindering voor lage lonen</h2>
+        <h2>De werkbonus: RSZ-vermindering voor lage lonen</h2>
         <p>
           Om werken financieel aantrekkelijker te maken voor werknemers met een laag loon, voerde de overheid de <Link href="/werkbonus">werkbonus</Link> in. Dit is een vermindering van je persoonlijke RSZ-bijdrage voor brutolonen tot ongeveer €3.144 per maand.
         </p>
@@ -79,7 +79,7 @@ export default function RSZBijdragePage() {
           Het maximum voordeel bedraagt circa €230 per maand en daalt naarmate je loon stijgt. Bij een brutoloon onder €2.078 geniet je van de volledige werkbonus.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">RSZ en je belastbaar inkomen</h2>
+        <h2>RSZ en je belastbaar inkomen</h2>
         <p>
           Je RSZ-bijdrage wordt afgetrokken van je brutoloon vóór de berekening van de <Link href="/bedrijfsvoorheffing">bedrijfsvoorheffing</Link>. Het bedrag dat overblijft na aftrek van de RSZ is je <strong>belastbaar inkomen</strong>. Op dit belastbaar inkomen worden de <Link href="/belastingschijven-belgie">progressieve belastingtarieven</Link> toegepast.
         </p>
@@ -87,12 +87,12 @@ export default function RSZBijdragePage() {
           Concreet: bij een bruto van €3.000 is je belastbaar inkomen €3.000 - €392,10 = €2.607,90 per maand.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">RSZ-bijdrage voor zelfstandigen</h2>
+        <h2>RSZ-bijdrage voor zelfstandigen</h2>
         <p>
           Zelfstandigen betalen geen RSZ in de klassieke zin, maar wel <strong>sociale bijdragen</strong> aan hun sociaal verzekeringsfonds. Het tarief bedraagt 20,5% op het netto belastbaar beroepsinkomen (met een minimum en maximumbijdrage). Zelfstandigen genieten hierdoor van dezelfde sociale bescherming als werknemers, hoewel de berekening anders verloopt.
         </p>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Veelgestelde vragen over RSZ</h2>
+        <h2>Veelgestelde vragen over RSZ</h2>
 
         <h3>Is de RSZ-bijdrage aftrekbaar van mijn belastingen?</h3>
         <p>Ja, de RSZ-bijdrage wordt automatisch afgetrokken van je bruto om je belastbaar inkomen te bepalen. Je betaalt dus geen belasting op het bedrag dat je aan RSZ betaalt.</p>
@@ -106,7 +106,7 @@ export default function RSZBijdragePage() {
         <p>
           Wil je exact weten hoeveel RSZ je betaalt? Gebruik onze <Link href="/calculator">bruto-netto calculator</Link> voor een berekening op maat.
         </p>
-      <div className="bg-gradient-to-br from-teal-700 to-teal-900 rounded-2xl p-8 text-white shadow-2xl mt-12"><div className="text-center mb-6"><h2 className="text-3xl font-bold mb-3">Bereken je nettoloon</h2><p className="text-teal-100 text-lg max-w-2xl mx-auto">Gebruik onze gratis calculator voor een gedetailleerde berekening op maat van jouw situatie.</p></div><div className="flex justify-center"><Link href="/calculator" className="inline-flex items-center gap-2 bg-white text-teal-800 font-bold px-8 py-4 rounded-xl hover:bg-teal-50 transition-colors shadow-lg text-lg"><span>Start Calculator</span><svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg></Link></div></div></article>
+      </article>
     </div>
   );
 }
