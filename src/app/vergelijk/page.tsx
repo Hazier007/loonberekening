@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'next';
+import { useState } from 'react';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import Link from 'next/link';
 import { calculateSalary, formatCurrency } from '@/lib/salary';

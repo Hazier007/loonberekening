@@ -148,7 +148,7 @@ export default function ArbeiderCalc() {
 
         <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Sector-specifieke regelingen</h2>
         <p className="text-lg text-gray-600 mb-6">
-          Arbeiders vallen vaak onder sector-specifieke <strong>collectieve arbeidsovereenkomsten (CAO's)</strong> die extra voordelen kunnen bevatten:
+          Arbeiders vallen vaak onder sector-specifieke <strong>collectieve arbeidsovereenkomsten (CAO&apos;s)</strong> die extra voordelen kunnen bevatten:
         </p>
 
         <div className="grid md:grid-cols-2 gap-6 mb-10">

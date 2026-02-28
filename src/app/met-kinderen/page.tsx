@@ -93,7 +93,7 @@ export default function MetKinderenPage() {
           </div>
         </div>
 
-        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Wat betekent "kind ten laste"?</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Wat betekent &quot;kind ten laste&quot;?</h2>
         <p className="text-lg text-gray-600 mb-6">
           Een kind is fiscaal ten laste als het:
         </p>
