@@ -17,6 +17,26 @@
   animation: slide-up 0.4s ease-out;
 }
 
+/* Responsive prose fix for mobile */
+@media (max-width: 640px) {
+  .prose-lg {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+  .prose-lg h1 {
+    font-size: 1.5rem;
+  }
+  .prose-lg h2 {
+    font-size: 1.25rem;
+  }
+  .prose-lg h3 {
+    font-size: 1.1rem;
+  }
+  .prose-lg table {
+    font-size: 0.8rem;
+  }
+}
+
 html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;

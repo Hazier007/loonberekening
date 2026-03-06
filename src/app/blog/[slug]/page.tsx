@@ -58,7 +58,7 @@ export default function BlogPost({ params }: Props) {
         { label: post.title }
       ]} />
 
-      <article className="prose prose-lg max-w-none">
+      <article className="prose prose-sm sm:prose-base lg:prose-lg max-w-none prose-headings:text-gray-900 prose-h2:text-xl sm:prose-h2:text-2xl lg:prose-h2:text-3xl">
         <div className="flex items-center gap-3 mb-4">
           <span className="inline-block bg-teal-100 text-teal-700 text-sm font-semibold px-3 py-1 rounded">
             {post.category}
@@ -69,7 +69,7 @@ export default function BlogPost({ params }: Props) {
           <span className="text-gray-500">· {post.readTime}</span>
         </div>
 
-        <h1 className="text-4xl font-bold text-gray-900 mb-6">{post.title}</h1>
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">{post.title}</h1>
 
         <div className="bg-gradient-to-r from-blue-50 to-teal-50 rounded-2xl p-6 mb-8 border border-blue-100">
           <p className="text-lg text-gray-700 leading-relaxed mb-0">
@@ -80,9 +80,9 @@ export default function BlogPost({ params }: Props) {
         {/* Article content wordt hier inline gerenderd op basis van slug */}
         <BlogContent slug={params.slug} />
 
-        <div className="bg-gradient-to-br from-teal-700 to-teal-900 rounded-2xl p-8 text-white shadow-2xl mt-12">
+        <div className="bg-gradient-to-br from-teal-700 to-teal-900 rounded-2xl p-5 sm:p-8 text-white shadow-2xl mt-12">
           <div className="text-center">
-            <h2 className="text-3xl font-bold mb-3">Bereken je nettoloon</h2>
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-3">Bereken je nettoloon</h2>
             <p className="text-teal-100 text-lg max-w-2xl mx-auto mb-6">
               Gebruik onze gratis calculator voor een gedetailleerde berekening.
             </p>
