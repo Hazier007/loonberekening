@@ -30,6 +30,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="nl-BE">
       <head>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1772283634325864"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-89D9TBSVF8" strategy="afterInteractive" />
         <Script id="ga-loonberekening" strategy="afterInteractive">
           {`window.dataLayer = window.dataLayer || [];
