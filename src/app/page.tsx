@@ -27,11 +27,11 @@ export default function Home() {
   };
 
   const kennisbankItems = [
-    { href: '/bruto-netto-verschil', title: 'Bruto vs Netto Verschil', desc: 'Wat is het verschil tussen bruto en netto? Complete uitleg met voorbeelden.', icon: '⚖️' },
-    { href: '/belastingschijven-belgie', title: 'Belastingschijven België', desc: 'Alle belastingschijven 2025/2026 met tarieven en berekeningen.', icon: '📊' },
-    { href: '/werkbonus', title: 'Werkbonus', desc: 'Wie komt in aanmerking voor de werkbonus en hoeveel is die waard?', icon: '🎯' },
-    { href: '/gemiddeld-loon-belgie', title: 'Gemiddeld Loon België', desc: 'Gemiddelde lonen per sector, leeftijd, regio en geslacht.', icon: '📈' },
-    { href: '/vakantiegeld-berekenen', title: 'Vakantiegeld Berekenen', desc: 'Enkel en dubbel vakantiegeld: hoeveel en wanneer?', icon: '🏖️' },
+    { href: '/blog/minimumloon-belgie-2026-bedragen-en-regels', title: 'Minimumloon België 2026', desc: 'Overzicht van de actuele GGMMI bedragen en regels per leeftijd.', icon: '💶' },
+    { href: '/blog/hoe-bereken-je-nettoloon-belgie', title: 'Nettoloon Berekenen Gids', desc: 'Complete handleiding om je bruto naar netto loon te vertalen.', icon: '📖' },
+    { href: '/blog/werkbonus-belgie-2026', title: 'Werkbonus België 2026', desc: 'Wie komt in aanmerking voor de werkbonus en hoeveel is die waard?', icon: '🎯' },
+    { href: '/blog/loonindexatie-2026-wat-verandert', title: 'Loonindexatie 2026', desc: 'Hoe werkt loonindexatie en wat is de impact op je loonbrief?', icon: '📈' },
+    { href: '/blog/verschil-bruto-netto-salaris', title: 'Bruto vs Netto Verschil', desc: 'Wat is het verschil tussen bruto en netto? Uitleg met voorbeelden.', icon: '⚖️' },
     { href: '/veelgestelde-vragen', title: 'Veelgestelde Vragen', desc: '25+ antwoorden op veelgestelde vragen over loon in België.', icon: '❓' },
   ];
 
