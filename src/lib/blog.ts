@@ -9,6 +9,14 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'minimumloon-belgie-2026-bedragen-en-regels',
+    title: 'Minimumloon België 2026: Actuele Bedragen en Regels',
+    description: 'Wat is het minimumloon in België in 2026? Overzicht van de GGMMI bedragen, wie er recht op heeft, en hoe het verschilt per leeftijd en ervaring.',
+    date: '2026-03-09',
+    readTime: '6 min',
+    category: 'Actueel',
+  },
+  {
     slug: 'hoe-bereken-je-nettoloon-belgie',
     title: 'Hoe Bereken je je Nettoloon in België?',
     description: 'Complete gids om je bruto naar netto loon te berekenen. RSZ, bedrijfsvoorheffing, belastingschijven en werkbonus uitgelegd.',

@@ -117,6 +117,72 @@ export default function BlogPost({ params }: Props) {
 function BlogContent({ slug }: { slug: string }) {
   // Inline content per artikel (compact versie)
   const content: Record<string, JSX.Element> = {
+    'minimumloon-belgie-2026-bedragen-en-regels': (
+      <>
+        <h2>Wat is het GGMMI?</h2>
+        <p>Het <strong>Gewaarborgd Gemiddeld Minimum Maandinkomen (GGMMI)</strong> is het wettelijk minimumloon in België. Het wordt vastgelegd door de Nationale Arbeidsraad (NAR) via collectieve arbeidsovereenkomsten. Elke werknemer in de privésector heeft recht op minstens dit bedrag. Het GGMMI wordt regelmatig aangepast aan de levensduurte via de automatische loonindexatie.</p>
+        <p>In tegenstelling tot veel andere landen heeft België geen simpel &quot;minimumloon per uur&quot;. Het GGMMI is een maandelijks brutobedrag dat varieert op basis van leeftijd en anciënniteit bij de werkgever.</p>
+
+        <h2>Actuele GGMMI bedragen 2026</h2>
+        <p>De huidige bedragen van het minimumloon in België (bruto per maand, voltijds):</p>
+        <ul>
+          <li><strong>18 jaar:</strong> €1.685,58/maand</li>
+          <li><strong>19 jaar:</strong> €1.746,70/maand</li>
+          <li><strong>20 jaar:</strong> €1.807,81/maand</li>
+          <li><strong>21+ jaar, 0 maanden anciënniteit:</strong> €1.994,18/maand</li>
+          <li><strong>21+ jaar, 6 maanden anciënniteit:</strong> €2.012,64/maand</li>
+          <li><strong>21+ jaar, 12 maanden anciënniteit:</strong> €2.029,88/maand</li>
+        </ul>
+        <p>Het referentiebedrag voor het minimumloon in België is dus <strong>€2.029,88 bruto per maand</strong> voor een volwassen werknemer (21+) met minstens 12 maanden anciënniteit. Dit bedrag is van toepassing bij een voltijdse tewerkstelling (38 uur/week).</p>
+
+        <h2>Sectoraal minimumloon vs. GGMMI</h2>
+        <p>Het GGMMI is het <em>absolute minimum</em>, maar in de praktijk liggen de lonen in de meeste sectoren hoger. Elk paritair comité (PC) kan een eigen sectoraal minimumloon vastleggen dat hoger is dan het GGMMI.</p>
+        <p>Enkele voorbeelden:</p>
+        <ul>
+          <li><strong>PC 200 (bedienden):</strong> minimumlonen variëren per categorie, vaak €2.100-€2.400</li>
+          <li><strong>PC 124 (bouw):</strong> minimumlonen starten hoger vanwege de zwaardere arbeidsomstandigheden</li>
+          <li><strong>PC 302 (horeca):</strong> eigen barema&apos;s per functiecategorie</li>
+        </ul>
+        <p>Je werkgever moet altijd het hoogste van de twee betalen: het GGMMI of het sectoraal minimum. Check je loonbrief en CAO om te weten welk minimumloon voor jou geldt.</p>
+
+        <h2>Wie heeft recht op het minimumloon?</h2>
+        <p>Het GGMMI geldt voor:</p>
+        <ul>
+          <li><strong>Voltijdse werknemers</strong> in de privésector</li>
+          <li><strong>Werknemers van 21 jaar en ouder</strong> (jongere werknemers hebben aangepaste bedragen)</li>
+          <li><strong>Deeltijdse werknemers</strong> ontvangen het minimumloon pro rata hun arbeidstijd</li>
+        </ul>
+        <p>Het GGMMI geldt <strong>niet</strong> voor:</p>
+        <ul>
+          <li>Zelfstandigen (zij hebben geen minimumloon)</li>
+          <li>Statutaire ambtenaren (eigen loonschalen)</li>
+          <li>Studenten met een studentenovereenkomst (in sommige gevallen)</li>
+          <li>Leerlingen in het kader van een alternerende opleiding</li>
+        </ul>
+
+        <h2>Minimumloon netto: wat hou je over?</h2>
+        <p>Het GGMMI van €2.029,88 bruto vertaalt zich naar ongeveer <strong>€1.613 netto per maand</strong> voor een alleenstaande zonder kinderen. Dit komt door:</p>
+        <ul>
+          <li>RSZ-bijdrage (13,07%): -€265</li>
+          <li>Werkbonus: +€198 (aanzienlijke RSZ-vermindering bij dit loonbedrag)</li>
+          <li>Bedrijfsvoorheffing: -€297</li>
+          <li>Bijzondere bijdrage: -€53</li>
+        </ul>
+        <p>Dankzij de <strong>werkbonus</strong> is de effectieve belastingdruk op het minimumloon lager dan op hogere lonen. De werkbonus is specifiek ontworpen om werken aantrekkelijker te maken voor werknemers met een laag loon.</p>
+        <p>Wil je precies weten hoeveel jij netto overhoudt? Gebruik onze <a href="/calculator">gratis bruto-netto calculator</a> en vul €2.029,88 in als brutoloon.</p>
+
+        <h2>Vergelijking met buurlanden</h2>
+        <p>Hoe verhoudt het Belgisch minimumloon zich tot dat van onze buurlanden?</p>
+        <ul>
+          <li><strong>Nederland:</strong> ~€2.070 bruto/maand — Iets hoger dan België, recent sterk gestegen</li>
+          <li><strong>Duitsland:</strong> ~€2.054 bruto/maand (€12,82/uur × 160 uur) — Vergelijkbaar met België</li>
+          <li><strong>Frankrijk:</strong> ~€1.767 bruto/maand (SMIC) — Lager dan België, maar met meer sociale voordelen</li>
+          <li><strong>Luxemburg:</strong> ~€2.571 bruto/maand — Fors hoger, het hoogste in de EU</li>
+        </ul>
+        <p>België zit qua minimumloon in de Europese middenmoot, maar door het sterke sociale zekerheidsstelsel (werkbonus, ziekteverzekering, pensioen) is de totale bescherming van werknemers met een minimumloon relatief goed uitgebouwd.</p>
+      </>
+    ),
+
     'hoe-bereken-je-nettoloon-belgie': (
       <>
         <h2>De basis: van bruto naar netto</h2>
