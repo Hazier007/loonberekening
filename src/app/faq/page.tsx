@@ -5,6 +5,82 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Veelgestelde Vragen over Loonberekening | Loonberekening.be',
   description: 'Antwoorden op de meestgestelde vragen over bruto-netto, RSZ, bedrijfsvoorheffing, werkbonus en loonberekening in België.',
+  keywords: 'loonberekening faq, bruto netto uitleg, rsz berekening, bedrijfsvoorheffing uitleg',
+  openGraph: {
+    title: 'Veelgestelde Vragen over Loonberekening | Loonberekening.be',
+    description: 'Antwoorden op de meestgestelde vragen over bruto-netto, RSZ, bedrijfsvoorheffing, werkbonus en loonberekening in België.',
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is het verschil tussen bruto- en nettoloon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Je brutoloon is het contractueel afgesproken bedrag. Na aftrek van RSZ-bijdrage (13,07%) en bedrijfsvoorheffing (progressief belastingtarief) hou je je nettoloon over. Bij een bruto van €3.000 is dat doorgaans €1.900-€2.100 netto."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe wordt de RSZ-bijdrage berekend?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De RSZ-bijdrage voor werknemers bedraagt 13,07% van het brutoloon. Voor zelfstandigen is dat 20,5% op het netto beroepsinkomen. De bijdrage financiert pensioen, ziekteverzekering, werkloosheid en kinderbijslag."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is bedrijfsvoorheffing en hoeveel bedraagt die?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De bedrijfsvoorheffing is een maandelijks voorschot op je personenbelasting. Het bedrag hangt af van je inkomen, gezinssituatie en statuut. België hanteert progressieve schijven: 25%, 40%, 45% en 50%."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is de werkbonus en kom ik in aanmerking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De werkbonus is een belastingvoordeel voor werknemers met een bruto maandloon tot ±€3.207. Het verlaagt je RSZ-bijdrage en bedrijfsvoorheffing, met een maximaal voordeel van ±€340 per maand bij de laagste lonen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is het verschil tussen een bediende en een arbeider?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het grootste verschil voor loonberekening is de 108%-regel bij arbeiders: RSZ wordt berekend op 108% van het brutoloon. Bedienden betalen RSZ op 100% van het bruto. Opzegregels zijn sinds 2014 gelijkgetrokken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe beïnvloeden kinderen ten laste mijn nettoloon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kinderen ten laste verhogen je belastingvrije som: €1.850 voor 1 kind, €4.760 voor 2, €10.660 voor 3. Je betaalt daardoor minder bedrijfsvoorheffing en houdt netto meer over."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Tellen maaltijdcheques mee als loon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Maaltijdcheques zijn een extralegaal voordeel, geen loon. Ze worden niet belast en er wordt geen RSZ op berekend. Maximale waarde: €8 per cheque per gewerkte dag, goed voor tot €160 extra per maand."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe werkt loonindexatie in België?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "België heeft automatische loonindexatie: wanneer de spilindex wordt overschreden, stijgen lonen met 2%. Het moment hangt af van je sector. Bij €3.000 bruto levert 2% indexatie ±€60 bruto (€30-35 netto) extra per maand op."
+      }
+    }
+  ]
 };
 
 const faqs = [
@@ -65,37 +141,35 @@ const faqs = [
           <li><strong>Je statuut</strong> (bediende, arbeider, zelfstandige)</li>
         </ul>
         <p>België werkt met <strong>progressieve belastingschijven</strong> (2026):</p>
-        
-        <div className="overflow-x-auto">
-          <table className="min-w-full border border-gray-200 rounded-lg">
+        <div className="overflow-x-auto my-4">
+          <table className="min-w-full border border-gray-300 rounded-lg">
             <thead>
-              <tr className="bg-gray-50">
-                <th className="border border-gray-200 px-4 py-2 text-left">Schijf</th>
-                <th className="border border-gray-200 px-4 py-2 text-left">Tarief</th>
+              <tr className="bg-gray-100">
+                <th className="border border-gray-300 px-4 py-2 text-left font-semibold">Schijf</th>
+                <th className="border border-gray-300 px-4 py-2 text-left font-semibold">Tarief</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td className="border border-gray-200 px-4 py-2">€0 – €15.820</td>
-                <td className="border border-gray-200 px-4 py-2">25%</td>
+                <td className="border border-gray-300 px-4 py-2">€0 – €15.820</td>
+                <td className="border border-gray-300 px-4 py-2">25%</td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="border border-gray-200 px-4 py-2">€15.820 – €27.920</td>
-                <td className="border border-gray-200 px-4 py-2">40%</td>
+                <td className="border border-gray-300 px-4 py-2">€15.820 – €27.920</td>
+                <td className="border border-gray-300 px-4 py-2">40%</td>
               </tr>
               <tr>
-                <td className="border border-gray-200 px-4 py-2">€27.920 – €48.320</td>
-                <td className="border border-gray-200 px-4 py-2">45%</td>
+                <td className="border border-gray-300 px-4 py-2">€27.920 – €48.320</td>
+                <td className="border border-gray-300 px-4 py-2">45%</td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="border border-gray-200 px-4 py-2">Boven €48.320</td>
-                <td className="border border-gray-200 px-4 py-2">50%</td>
+                <td className="border border-gray-300 px-4 py-2">Boven €48.320</td>
+                <td className="border border-gray-300 px-4 py-2">50%</td>
               </tr>
             </tbody>
           </table>
         </div>
-        
-        <p className="mt-4">Iedereen krijgt een <strong>belastingvrije som</strong> van ±€10.570, waardoor je op dat eerste stuk géén belasting betaalt.</p>
+        <p>Iedereen krijgt een <strong>belastingvrije som</strong> van ±€10.570, waardoor je op dat eerste stuk géén belasting betaalt.</p>
         <p className="mt-4">
           <Link href="/" className="inline-flex items-center text-teal-700 hover:text-teal-800 font-medium">
             👉 Bereken je exacte bedrijfsvoorheffing
@@ -140,57 +214,59 @@ const faqs = [
     answer: (
       <>
         <p>Hoewel de wetgever het verschil steeds kleiner maakt, zijn er nog altijd <strong>praktische verschillen</strong>:</p>
-        
-        <div className="overflow-x-auto">
-          <table className="min-w-full border border-gray-200 rounded-lg">
+        <div className="overflow-x-auto my-4">
+          <table className="min-w-full border border-gray-300 rounded-lg">
             <thead>
-              <tr className="bg-gray-50">
-                <th className="border border-gray-200 px-4 py-2"></th>
-                <th className="border border-gray-200 px-4 py-2">Bediende</th>
-                <th className="border border-gray-200 px-4 py-2">Arbeider</th>
+              <tr className="bg-gray-100">
+                <th className="border border-gray-300 px-4 py-2 text-left font-semibold">Aspect</th>
+                <th className="border border-gray-300 px-4 py-2 text-left font-semibold">Bediende</th>
+                <th className="border border-gray-300 px-4 py-2 text-left font-semibold">Arbeider</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td className="border border-gray-200 px-4 py-2 font-medium">Type werk</td>
-                <td className="border border-gray-200 px-4 py-2">Hoofdarbeid (kantoor, admin)</td>
-                <td className="border border-gray-200 px-4 py-2">Handarbeid (bouw, productie)</td>
+                <td className="border border-gray-300 px-4 py-2"><strong>Type werk</strong></td>
+                <td className="border border-gray-300 px-4 py-2">Hoofdarbeid (kantoor, admin)</td>
+                <td className="border border-gray-300 px-4 py-2">Handarbeid (bouw, productie)</td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="border border-gray-200 px-4 py-2 font-medium">RSZ-berekening</td>
-                <td className="border border-gray-200 px-4 py-2">Op 100% bruto</td>
-                <td className="border border-gray-200 px-4 py-2">Op 108% bruto (sociaal bruto)</td>
+                <td className="border border-gray-300 px-4 py-2"><strong>RSZ-berekening</strong></td>
+                <td className="border border-gray-300 px-4 py-2">Op 100% bruto</td>
+                <td className="border border-gray-300 px-4 py-2">Op 108% bruto (sociaal bruto)</td>
               </tr>
               <tr>
-                <td className="border border-gray-200 px-4 py-2 font-medium">Vakantiegeld</td>
-                <td className="border border-gray-200 px-4 py-2">Betaald door werkgever</td>
-                <td className="border border-gray-200 px-4 py-2">Betaald door vakantiekas</td>
+                <td className="border border-gray-300 px-4 py-2"><strong>Vakantiegeld</strong></td>
+                <td className="border border-gray-300 px-4 py-2">Betaald door werkgever</td>
+                <td className="border border-gray-300 px-4 py-2">Betaald door vakantiekas</td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="border border-gray-200 px-4 py-2 font-medium">Opzegvergoeding</td>
-                <td className="border border-gray-200 px-4 py-2">Sinds 2014 gelijk</td>
-                <td className="border border-gray-200 px-4 py-2">Sinds 2014 gelijk</td>
+                <td className="border border-gray-300 px-4 py-2"><strong>Opzegvergoeding</strong></td>
+                <td className="border border-gray-300 px-4 py-2">Sinds 2014 gelijk</td>
+                <td className="border border-gray-300 px-4 py-2">Sinds 2014 gelijk</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2"><strong>Gewaarborgd loon</strong></td>
+                <td className="border border-gray-300 px-4 py-2">30 dagen bij ziekte</td>
+                <td className="border border-gray-300 px-4 py-2">7/7/14-dagenregeling</td>
               </tr>
             </tbody>
           </table>
         </div>
-        
-        <p className="mt-4">Het grootste verschil voor je loonberekening is de <strong>108%-regel bij arbeiders</strong>: je RSZ wordt berekend op 108% van je brutoloon, wat een iets ander nettoresultaat geeft.</p>
-        <div className="mt-4 flex flex-col sm:flex-row gap-2">
-          <Link href="/bediende" className="inline-flex items-center text-teal-700 hover:text-teal-800 font-medium">
+        <p>Het grootste verschil voor je loonberekening is de <strong>108%-regel bij arbeiders</strong>: je RSZ wordt berekend op 108% van je brutoloon, wat een iets ander nettoresultaat geeft.</p>
+        <p className="mt-4">
+          <Link href="/bediende" className="inline-flex items-center text-teal-700 hover:text-teal-800 font-medium mr-4">
             👉 Calculator voor bedienden
             <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </Link>
-          <span className="text-gray-500">|</span>
           <Link href="/arbeider" className="inline-flex items-center text-teal-700 hover:text-teal-800 font-medium">
-            👉 Calculator voor arbeiders
+            Calculator voor arbeiders
             <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </Link>
-        </div>
+        </p>
       </>
     )
   },
@@ -200,37 +276,35 @@ const faqs = [
       <>
         <p>Kinderen ten laste geven je een <strong>hogere belastingvrije som</strong>, waardoor je minder bedrijfsvoorheffing betaalt en je netto méér overhoudt.</p>
         <p><strong>Extra belastingvrij per kind (2026):</strong></p>
-        
-        <div className="overflow-x-auto">
-          <table className="min-w-full border border-gray-200 rounded-lg">
+        <div className="overflow-x-auto my-4">
+          <table className="min-w-full border border-gray-300 rounded-lg">
             <thead>
-              <tr className="bg-gray-50">
-                <th className="border border-gray-200 px-4 py-2 text-left">Kinderen ten laste</th>
-                <th className="border border-gray-200 px-4 py-2 text-left">Extra belastingvrij</th>
+              <tr className="bg-gray-100">
+                <th className="border border-gray-300 px-4 py-2 text-left font-semibold">Kinderen ten laste</th>
+                <th className="border border-gray-300 px-4 py-2 text-left font-semibold">Extra belastingvrij</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td className="border border-gray-200 px-4 py-2">1 kind</td>
-                <td className="border border-gray-200 px-4 py-2">€1.850</td>
+                <td className="border border-gray-300 px-4 py-2">1 kind</td>
+                <td className="border border-gray-300 px-4 py-2">€1.850</td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="border border-gray-200 px-4 py-2">2 kinderen</td>
-                <td className="border border-gray-200 px-4 py-2">€4.760</td>
+                <td className="border border-gray-300 px-4 py-2">2 kinderen</td>
+                <td className="border border-gray-300 px-4 py-2">€4.760</td>
               </tr>
               <tr>
-                <td className="border border-gray-200 px-4 py-2">3 kinderen</td>
-                <td className="border border-gray-200 px-4 py-2">€10.660</td>
+                <td className="border border-gray-300 px-4 py-2">3 kinderen</td>
+                <td className="border border-gray-300 px-4 py-2">€10.660</td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="border border-gray-200 px-4 py-2">4 kinderen</td>
-                <td className="border border-gray-200 px-4 py-2">€17.250</td>
+                <td className="border border-gray-300 px-4 py-2">4 kinderen</td>
+                <td className="border border-gray-300 px-4 py-2">€17.250</td>
               </tr>
             </tbody>
           </table>
         </div>
-        
-        <p className="mt-4">Het voordeel stijgt dus <strong>bovenproportioneel</strong> bij meer kinderen. Een derde kind levert procentueel meer op dan het eerste.</p>
+        <p>Het voordeel stijgt dus <strong>bovenproportioneel</strong> bij meer kinderen. Een derde kind levert procentueel meer op dan het eerste.</p>
         <p><strong>Belangrijk:</strong> Een kind is fiscaal ten laste als het deel uitmaakt van je gezin op 1 januari van het aanslagjaar, en het kind niet meer dan €7.010 netto eigen inkomsten heeft (2026).</p>
         <p className="mt-4">
           <Link href="/" className="inline-flex items-center text-teal-700 hover:text-teal-800 font-medium">
@@ -291,75 +365,37 @@ const faqs = [
   }
 ];
 
-export default function FAQPage() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faqs.map(faq => ({
-      "@type": "Question",
-      "name": faq.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.question.includes("verschil tussen bruto- en nettoloon") 
-          ? "Je brutoloon is het contractueel afgesproken bedrag. Na aftrek van RSZ-bijdrage (13,07%) en bedrijfsvoorheffing (progressief belastingtarief) hou je je nettoloon over. Bij een bruto van €3.000 is dat doorgaans €1.900-€2.100 netto."
-          : faq.question.includes("RSZ-bijdrage")
-          ? "De RSZ-bijdrage voor werknemers bedraagt 13,07% van het brutoloon. Voor zelfstandigen is dat 20,5% op het netto beroepsinkomen. De bijdrage financiert pensioen, ziekteverzekering, werkloosheid en kinderbijslag."
-          : faq.question.includes("bedrijfsvoorheffing")
-          ? "De bedrijfsvoorheffing is een maandelijks voorschot op je personenbelasting. Het bedrag hangt af van je inkomen, gezinssituatie en statuut. België hanteert progressieve schijven: 25%, 40%, 45% en 50%."
-          : faq.question.includes("werkbonus")
-          ? "De werkbonus is een belastingvoordeel voor werknemers met een bruto maandloon tot ±€3.207. Het verlaagt je RSZ-bijdrage en bedrijfsvoorheffing, met een maximaal voordeel van ±€340 per maand bij de laagste lonen."
-          : faq.question.includes("bediende en een arbeider")
-          ? "Het grootste verschil voor loonberekening is de 108%-regel bij arbeiders: RSZ wordt berekend op 108% van het brutoloon. Bedienden betalen RSZ op 100% van het bruto. Opzegregels zijn sinds 2014 gelijkgetrokken."
-          : faq.question.includes("kinderen ten laste")
-          ? "Kinderen ten laste verhogen je belastingvrije som: €1.850 voor 1 kind, €4.760 voor 2, €10.660 voor 3. Je betaalt daardoor minder bedrijfsvoorheffing en houdt netto meer over."
-          : faq.question.includes("maaltijdcheques")
-          ? "Maaltijdcheques zijn een extralegaal voordeel, geen loon. Ze worden niet belast en er wordt geen RSZ op berekend. Maximale waarde: €8 per cheque per gewerkte dag, goed voor tot €160 extra per maand."
-          : "België heeft automatische loonindexatie: wanneer de spilindex wordt overschreden, stijgen lonen met 2%. Het moment hangt af van je sector. Bij €3.000 bruto levert 2% indexatie ±€60 bruto (€30-35 netto) extra per maand op."
-      }
-    }))
-  };
-
+export default function FAQ() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       
       <Breadcrumbs items={[
         { label: 'Home', href: '/' },
-        { label: 'Veelgestelde Vragen' }
+        { label: 'FAQ' }
       ]} />
 
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">Veelgestelde Vragen over Loonberekening</h1>
-        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          Je loonbrief kan soms aanvoelen als een raadsel. Wat is RSZ precies? Waarom hou je zoveel minder over dan je brutoloon? En hoe zit dat nu met die werkbonus? Hieronder beantwoorden we de <strong>8 meestgestelde vragen</strong> over loonberekening in België.
-        </p>
-      </div>
+      <h1 className="text-4xl font-bold text-gray-900 mb-4">Veelgestelde Vragen over Loonberekening</h1>
+      <p className="text-lg text-gray-600 mb-12 max-w-3xl">
+        Je loonbrief kan soms aanvoelen als een raadsel. Wat is RSZ precies? Waarom hou je zoveel minder over dan je brutoloon? En hoe zit dat nu met die werkbonus? Hieronder beantwoorden we de <strong>8 meestgestelde vragen</strong> over loonberekening in België.
+      </p>
 
-      <div className="space-y-6">
+      <div className="space-y-8">
         {faqs.map((faq, index) => (
-          <details key={index} className="group bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition-all">
-            <summary className="flex items-center justify-between p-6 cursor-pointer">
-              <h2 className="text-lg font-semibold text-gray-900 pr-4">{faq.question}</h2>
-              <div className="flex-shrink-0">
-                <svg className="w-5 h-5 text-gray-500 transform group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </div>
-            </summary>
-            <div className="px-6 pb-6">
-              <div className="prose prose-sm max-w-none text-gray-700">
-                {faq.answer}
-              </div>
+          <div key={index} className="bg-white rounded-xl shadow-lg border border-gray-200 p-6 hover:shadow-xl transition-shadow">
+            <h2 className="text-xl font-bold text-gray-900 mb-4">{index + 1}. {faq.question}</h2>
+            <div className="text-gray-700 prose prose-lg max-w-none">
+              {faq.answer}
             </div>
-          </details>
+          </div>
         ))}
       </div>
 
       <div className="bg-gradient-to-br from-teal-700 to-teal-900 rounded-2xl p-8 text-white shadow-2xl mt-12">
         <div className="text-center">
-          <h2 className="text-3xl font-bold mb-3">Bereken je nettoloon</h2>
+          <h2 className="text-3xl font-bold mb-4">Bereken je nettoloon</h2>
           <p className="text-teal-100 text-lg max-w-2xl mx-auto mb-6">
-            Wil je precies weten hoeveel je netto overhoudt? Gebruik onze gratis calculator.
+            Gebruik onze gratis calculator voor een gedetailleerde berekening van je nettoloon.
           </p>
           <Link 
             href="/" 

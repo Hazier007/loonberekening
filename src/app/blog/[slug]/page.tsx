@@ -182,7 +182,7 @@ function BlogContent({ slug }: { slug: string }) {
       </>
     ),
 
-    'hoe-bereken-je-nettoloon-belgie': (
+    'hoe-bereken-je-nettoloon': (
       <>
         <h2>Waarom is er zo'n groot verschil?</h2>
         <p>België staat bekend om zijn hoge belastingdruk. Tussen je brutoloon en je nettoloon zitten meerdere afhoudingen die samen een flink stuk van je loon opslokken.</p>
@@ -356,7 +356,7 @@ function BlogContent({ slug }: { slug: string }) {
       </>
     ),
 
-    'verschil-bruto-netto-salaris': (
+    'verschil-bruto-netto': (
       <>
         <h2>Bruto loon: wat is dat precies?</h2>
         <p>Je <strong>brutoloon</strong> is het totaalbedrag dat je werkgever je betaalt vóór alle afhoudingen. Het is het bedrag dat in je arbeidscontract staat.</p>
@@ -704,7 +704,7 @@ function BlogContent({ slug }: { slug: string }) {
       </>
     ),
 
-    'loonindexatie-2026-wat-verandert': (
+    'loonindexatie-2026': (
       <>
         <h2>Wat is loonindexatie?</h2>
         <p>Loonindexatie is de <strong>automatische aanpassing van je loon aan de stijgende levensduurte</strong>. België is een van de weinige landen ter wereld met dit systeem.</p>
