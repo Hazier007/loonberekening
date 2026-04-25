@@ -55,11 +55,15 @@ export default function VergelijkPage() {
 
       {/* Input */}
       <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 mb-8">
-        <label className="block text-lg font-semibold text-gray-900 mb-3">
+        <label htmlFor="vergelijk-bruto" className="block text-lg font-semibold text-gray-900 mb-3">
           Bruto maandloon (€)
         </label>
         <input
+          id="vergelijk-bruto"
+          name="grossMonthly"
           type="number"
+          inputMode="decimal"
+          autoComplete="transaction-amount"
           value={bruto}
           onChange={(e) => setBruto(Math.max(0, Number(e.target.value)))}
           className="w-full px-6 py-4 border-2 border-gray-300 rounded-xl text-2xl font-bold text-center focus:ring-2 focus:ring-teal-500 focus:border-teal-500"

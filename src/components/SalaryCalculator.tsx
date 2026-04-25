@@ -35,9 +35,13 @@ export default function SalaryCalculator({ initialGross = 3000, compact = false 
 
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Bruto maandloon (€)</label>
+              <label htmlFor="bruto-maandloon" className="block text-sm font-medium text-gray-700 mb-1">Bruto maandloon (€)</label>
               <input
+                id="bruto-maandloon"
+                name="grossMonthly"
                 type="number"
+                inputMode="decimal"
+                autoComplete="transaction-amount"
                 value={input.grossMonthly}
                 onChange={(e) => setInput({ ...input, grossMonthly: Math.max(0, Number(e.target.value)) })}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg text-lg font-semibold focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
@@ -47,8 +51,11 @@ export default function SalaryCalculator({ initialGross = 3000, compact = false 
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Burgerlijke staat</label>
+              <label htmlFor="burgerlijke-staat" className="block text-sm font-medium text-gray-700 mb-1">Burgerlijke staat</label>
               <select
+                id="burgerlijke-staat"
+                name="status"
+                autoComplete="off"
                 value={input.status}
                 onChange={(e) => setInput({ ...input, status: e.target.value as SalaryInput['status'] })}
                 className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500"
@@ -60,8 +67,11 @@ export default function SalaryCalculator({ initialGross = 3000, compact = false 
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Kinderen ten laste</label>
+              <label htmlFor="kinderen" className="block text-sm font-medium text-gray-700 mb-1">Kinderen ten laste</label>
               <select
+                id="kinderen"
+                name="kinderen"
+                autoComplete="off"
                 value={input.kinderen}
                 onChange={(e) => setInput({ ...input, kinderen: Number(e.target.value) })}
                 className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500"
@@ -78,6 +88,8 @@ export default function SalaryCalculator({ initialGross = 3000, compact = false 
                   <input
                     type="checkbox"
                     id="handicap"
+                    name="handicap"
+                    autoComplete="off"
                     checked={input.handicap}
                     onChange={(e) => setInput({ ...input, handicap: e.target.checked })}
                     className="w-4 h-4 text-teal-600 rounded"
@@ -89,6 +101,8 @@ export default function SalaryCalculator({ initialGross = 3000, compact = false 
                   <input
                     type="checkbox"
                     id="maaltijdcheques"
+                    name="maaltijdcheques"
+                    autoComplete="off"
                     checked={input.maaltijdcheques}
                     onChange={(e) => setInput({ ...input, maaltijdcheques: e.target.checked })}
                     className="w-4 h-4 text-teal-600 rounded"
@@ -98,9 +112,13 @@ export default function SalaryCalculator({ initialGross = 3000, compact = false 
 
                 {input.maaltijdcheques && (
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Waarde maaltijdcheque (€/dag)</label>
+                    <label htmlFor="maaltijdcheques-waarde" className="block text-sm font-medium text-gray-700 mb-1">Waarde maaltijdcheque (€/dag)</label>
                     <input
+                      id="maaltijdcheques-waarde"
+                      name="maaltijdchequesValue"
                       type="number"
+                      inputMode="decimal"
+                      autoComplete="off"
                       value={input.maaltijdchequesValue}
                       onChange={(e) => setInput({ ...input, maaltijdchequesValue: Number(e.target.value) })}
                       className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500"
