@@ -308,7 +308,7 @@ function BlogContent({ slug }: { slug: string }) {
               </tr>
               <tr>
                 <td className="border border-gray-300 px-4 py-2">+ Werkbonus</td>
-                <td className="border border-gray-300 px-4 py-2 text-right">€0 (bruto > grens)</td>
+                <td className="border border-gray-300 px-4 py-2 text-right">€0 (bruto &gt; grens)</td>
               </tr>
               <tr className="bg-teal-50 font-bold">
                 <td className="border border-gray-300 px-4 py-2">Nettoloon</td>
@@ -554,7 +554,7 @@ function BlogContent({ slug }: { slug: string }) {
                 <td className="border border-gray-300 px-4 py-2">Degressief (lineaire afbouw)</td>
               </tr>
               <tr>
-                <td className="border border-gray-300 px-4 py-2">> €2.961,27</td>
+                <td className="border border-gray-300 px-4 py-2">&gt; €2.961,27</td>
                 <td className="border border-gray-300 px-4 py-2"><strong>€0</strong> (geen recht)</td>
               </tr>
             </tbody>
@@ -580,7 +580,7 @@ function BlogContent({ slug }: { slug: string }) {
                 <td className="border border-gray-300 px-4 py-2">Degressief (lineaire afbouw)</td>
               </tr>
               <tr>
-                <td className="border border-gray-300 px-4 py-2">> €3.198,17</td>
+                <td className="border border-gray-300 px-4 py-2">&gt; €3.198,17</td>
                 <td className="border border-gray-300 px-4 py-2"><strong>€0</strong> (geen recht)</td>
               </tr>
             </tbody>
