@@ -116,7 +116,7 @@ const faqs = [
           <li><strong>Werkgevers:</strong> ±25% bovenop je bruto (zie je niet op je loonbrief)</li>
           <li><strong>Zelfstandigen:</strong> 20,5% op je netto beroepsinkomen</li>
         </ul>
-        <p>De RSZ financiert je <strong>pensioen, ziekteverzekering, werkloosheidsuitkering, kinderbijslag</strong> en andere sociale beschermingen. Het is dus geen "verloren" geld — het bouwt je sociale rechten op.</p>
+        <p>De RSZ financiert je <strong>pensioen, ziekteverzekering, werkloosheidsuitkering, kinderbijslag</strong> en andere sociale beschermingen. Het is dus geen &ldquo;verloren&rdquo; geld — het bouwt je sociale rechten op.</p>
         <p><strong>Rekenvoorbeeld:</strong> Bij een brutoloon van €3.000 betaal je €392,10 RSZ-bijdrage (3.000 × 13,07%).</p>
         <p className="mt-4">
           <Link href="/bediende" className="inline-flex items-center text-teal-700 hover:text-teal-800 font-medium">
@@ -351,7 +351,7 @@ const faqs = [
           <li>Het moment van indexatie hangt af van je sector (paritair comité)</li>
           <li>Sommige sectoren indexeren <strong>maandelijks</strong>, andere <strong>jaarlijks</strong> (bv. in januari)</li>
         </ul>
-        <p><strong>Wat betekent dit concreet?</strong> Bij een bruto maandloon van €3.000 levert een indexatie van 2% je <strong>€60 bruto</strong> extra per maand op. Netto hou je daar — afhankelijk van je belastingschijf — zo'n <strong>€30-€35</strong> van over.</p>
+        <p><strong>Wat betekent dit concreet?</strong> Bij een bruto maandloon van €3.000 levert een indexatie van 2% je <strong>€60 bruto</strong> extra per maand op. Netto hou je daar — afhankelijk van je belastingschijf — zo&rsquo;n <strong>€30-€35</strong> van over.</p>
         <p className="mt-4">
           <Link href="/blog/loonindexatie-2026" className="inline-flex items-center text-teal-700 hover:text-teal-800 font-medium">
             👉 Lees meer over loonindexatie 2026
