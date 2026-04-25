@@ -105,7 +105,7 @@ export default function PrivacybeleidPage() {
         <ul>
           <li><strong>Inzage</strong> — een kopie van de gegevens die wij van u verwerken (art. 15).</li>
           <li><strong>Rectificatie</strong> — correctie van onjuiste gegevens (art. 16).</li>
-          <li><strong>Wissing</strong> ("recht om vergeten te worden") (art. 17).</li>
+          <li><strong>Wissing</strong> (&ldquo;recht om vergeten te worden&rdquo;) (art. 17).</li>
           <li><strong>Beperking</strong> van de verwerking (art. 18).</li>
           <li><strong>Gegevensoverdraagbaarheid</strong> (art. 20).</li>
           <li><strong>Bezwaar</strong> tegen verwerking op basis van gerechtvaardigd belang (art. 21).</li>
