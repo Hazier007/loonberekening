@@ -46,7 +46,6 @@ export default function SalaryCalculator({ initialGross = 3000, compact = false 
                 onChange={(e) => setInput({ ...input, grossMonthly: Math.max(0, Number(e.target.value)) })}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg text-lg font-semibold focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
                 min="0"
-                step="100"
               />
             </div>
 
