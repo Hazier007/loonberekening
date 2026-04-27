@@ -29,6 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="nl-BE">
       <head>
+        <meta name="e13e11c1f6eb6bd" content="68f7b200c2f8c9733e4204ac184c41cb" />
         <script async src="https://fundingchoicesmessages.google.com/i/pub-1772283634325864?ers=1" crossOrigin="anonymous"></script>
         <Script
           async
