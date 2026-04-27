@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SalaryCalculator from '@/components/SalaryCalculator';
 import AmountCard from '@/components/AmountCard';
 import SectorCard from '@/components/SectorCard';
+import BolAffiliateCard from '@/components/BolAffiliateCard';
 import { salaryAmounts, sectors } from '@/lib/sectors';
 import Link from 'next/link';
 
@@ -82,6 +83,9 @@ export default function Home() {
             <div className="lg:col-span-7">
               <div className="bg-white rounded-2xl shadow-xl shadow-gray-200/50 border border-gray-100 p-1">
                 <SalaryCalculator compact />
+              </div>
+              <div className="mt-6">
+                <BolAffiliateCard />
               </div>
             </div>
           </div>
