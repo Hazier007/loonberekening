@@ -1,7 +1,8 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useRef } from 'react';
 import { calculateSalary, formatCurrency, type SalaryInput } from '@/lib/salary';
+import { trackEvent, grossBucket } from '@/lib/analytics';
 import SalaryBreakdown from './SalaryBreakdown';
 
 interface Props {
@@ -21,6 +22,28 @@ export default function SalaryCalculator({ initialGross = 3000, compact = false 
     maaltijdchequesValue: 8,
   });
   const [view, setView] = useState<'maandelijks' | 'jaarlijks'>('maandelijks');
+
+  // De calculator rekent live mee bij elke toetsaanslag; er is geen submit-knop.
+  // "Eerste berekening" = de eerste keer dat de bezoeker een veld aanpast.
+  // Deze ref zorgt dat calculate_submit exact één keer per sessie/mount vuurt.
+  const hasTrackedCalculation = useRef(false);
+
+  /** Past de invoer aan en vuurt bij de eerste wijziging het GA4-event calculate_submit. */
+  const updateInput = (patch: Partial<SalaryInput>) => {
+    const next = { ...input, ...patch };
+    setInput(next);
+
+    if (hasTrackedCalculation.current) return;
+    hasTrackedCalculation.current = true;
+
+    trackEvent('calculate_submit', {
+      bruto_bucket: grossBucket(next.grossMonthly),
+      status: next.status,
+      kinderen: next.kinderen,
+      maaltijdcheques: next.maaltijdcheques,
+      variant: compact ? 'compact' : 'volledig',
+    });
+  };
 
   const result = useMemo(() => calculateSalary(input), [input]);
 
@@ -43,7 +66,7 @@ export default function SalaryCalculator({ initialGross = 3000, compact = false 
                 inputMode="decimal"
                 autoComplete="transaction-amount"
                 value={input.grossMonthly}
-                onChange={(e) => setInput({ ...input, grossMonthly: Math.max(0, Number(e.target.value)) })}
+                onChange={(e) => updateInput({ grossMonthly: Math.max(0, Number(e.target.value)) })}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg text-lg font-semibold focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
                 min="0"
               />
@@ -56,7 +79,7 @@ export default function SalaryCalculator({ initialGross = 3000, compact = false 
                 name="status"
                 autoComplete="off"
                 value={input.status}
-                onChange={(e) => setInput({ ...input, status: e.target.value as SalaryInput['status'] })}
+                onChange={(e) => updateInput({ status: e.target.value as SalaryInput['status'] })}
                 className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500"
               >
                 <option value="alleenstaand">Alleenstaand</option>
@@ -72,7 +95,7 @@ export default function SalaryCalculator({ initialGross = 3000, compact = false 
                 name="kinderen"
                 autoComplete="off"
                 value={input.kinderen}
-                onChange={(e) => setInput({ ...input, kinderen: Number(e.target.value) })}
+                onChange={(e) => updateInput({ kinderen: Number(e.target.value) })}
                 className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500"
               >
                 {[0, 1, 2, 3, 4, 5].map((n) => (
@@ -90,7 +113,7 @@ export default function SalaryCalculator({ initialGross = 3000, compact = false 
                     name="handicap"
                     autoComplete="off"
                     checked={input.handicap}
-                    onChange={(e) => setInput({ ...input, handicap: e.target.checked })}
+                    onChange={(e) => updateInput({ handicap: e.target.checked })}
                     className="w-4 h-4 text-teal-600 rounded"
                   />
                   <label htmlFor="handicap" className="text-sm text-gray-700">Handicap</label>
@@ -103,7 +126,7 @@ export default function SalaryCalculator({ initialGross = 3000, compact = false 
                     name="maaltijdcheques"
                     autoComplete="off"
                     checked={input.maaltijdcheques}
-                    onChange={(e) => setInput({ ...input, maaltijdcheques: e.target.checked })}
+                    onChange={(e) => updateInput({ maaltijdcheques: e.target.checked })}
                     className="w-4 h-4 text-teal-600 rounded"
                   />
                   <label htmlFor="maaltijdcheques" className="text-sm text-gray-700">Maaltijdcheques</label>
@@ -119,7 +142,7 @@ export default function SalaryCalculator({ initialGross = 3000, compact = false 
                       inputMode="decimal"
                       autoComplete="off"
                       value={input.maaltijdchequesValue}
-                      onChange={(e) => setInput({ ...input, maaltijdchequesValue: Number(e.target.value) })}
+                      onChange={(e) => updateInput({ maaltijdchequesValue: Number(e.target.value) })}
                       className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500"
                       min="0"
                       max="8"
