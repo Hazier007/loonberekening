@@ -22,9 +22,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: post.title,
     description: post.description,
+    alternates: { canonical: `https://loonberekening.be/blog/${post.slug}` },
     openGraph: {
+      type: 'article',
       title: post.title,
       description: post.description,
+      publishedTime: post.date,
+      modifiedTime: post.updatedDate,
+      authors: [post.author],
     },
   };
 }
@@ -42,9 +47,16 @@ export default function BlogPost({ params }: Props) {
     headline: post.title,
     description: post.description,
     datePublished: post.date,
+    dateModified: post.updatedDate,
     author: {
+      '@type': 'Person',
+      name: post.author,
+      url: 'https://loonberekening.be/over-ons#auteur',
+    },
+    publisher: {
       '@type': 'Organization',
       name: 'Loonberekening.be',
+      url: 'https://loonberekening.be',
     },
   };
 
@@ -69,7 +81,16 @@ export default function BlogPost({ params }: Props) {
           <span className="text-gray-500">· {post.readTime}</span>
         </div>
 
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">{post.title}</h1>
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-2">{post.title}</h1>
+
+        <p className="text-sm text-gray-500 mb-6">
+          Door{' '}
+          <Link href="/over-ons#auteur" className="text-teal-700 hover:underline">
+            {post.author}
+          </Link>
+          {' '}· Laatst bijgewerkt:{' '}
+          {new Date(post.updatedDate).toLocaleDateString('nl-BE', { day: 'numeric', month: 'long', year: 'numeric' })}
+        </p>
 
         <div className="bg-gradient-to-r from-blue-50 to-teal-50 rounded-2xl p-6 mb-8 border border-blue-100">
           <p className="text-lg text-gray-700 leading-relaxed mb-0">

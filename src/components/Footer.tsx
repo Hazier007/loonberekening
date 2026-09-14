@@ -45,6 +45,9 @@ export default function Footer() {
             <h3 className="font-semibold text-white mb-3">Over Ons</h3>
             <ul className="space-y-2 text-sm">
               <li><Link href="/over-ons" className="hover:text-teal-400">Over Loonberekening.be</Link></li>
+              <li><Link href="/over-ons#auteur" className="hover:text-teal-400">Over de auteur</Link></li>
+              <li><Link href="/bronnen" className="hover:text-teal-400">Bronnen</Link></li>
+              <li><Link href="/blog" className="hover:text-teal-400">Blog</Link></li>
               <li><Link href="/privacy" className="hover:text-teal-400">Privacybeleid</Link></li>
               <li><Link href="/calculator" className="hover:text-teal-400">Loonberekening Calculator</Link></li>
             </ul>

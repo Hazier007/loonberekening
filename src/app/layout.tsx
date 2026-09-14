@@ -25,11 +25,30 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationJsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      name: 'Loonberekening.be',
+      url: 'https://loonberekening.be',
+      description: 'Gratis online tool om je Belgische nettoloon te berekenen.',
+      sameAs: ['https://hazier.be'],
+    },
+    {
+      '@type': 'WebSite',
+      name: 'Loonberekening.be',
+      url: 'https://loonberekening.be',
+    },
+  ],
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="nl-BE">
       <head>
         <meta name="e13e11c1f6eb6bd" content="68f7b200c2f8c9733e4204ac184c41cb" /> <meta name="tradetracker-site-verification" content="c74ee59a48dbd8b037c6505bdbec9bcc0cb77831" /> <meta name="verification" content="44a3da8c101e65e4d541fa524e53cae0" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
         <script async src="https://fundingchoicesmessages.google.com/i/pub-1772283634325864?ers=1" crossOrigin="anonymous"></script>
         <Script
           async

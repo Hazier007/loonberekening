@@ -28,6 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/zelfstandige`, changeFrequency: 'yearly' as const, priority: 0.7 },
     { url: `${baseUrl}/vergelijk`, changeFrequency: 'monthly' as const, priority: 0.7 },
     { url: `${baseUrl}/over-ons`, changeFrequency: 'yearly' as const, priority: 0.3 },
+    { url: `${baseUrl}/bronnen`, changeFrequency: 'yearly' as const, priority: 0.4 },
     { url: `${baseUrl}/privacy`, changeFrequency: 'yearly' as const, priority: 0.2 },
     { url: `${baseUrl}/blog`, changeFrequency: 'weekly' as const, priority: 0.7 },
     { url: `${baseUrl}/blog/hoe-bereken-je-nettoloon`, changeFrequency: 'monthly' as const, priority: 0.6 },
