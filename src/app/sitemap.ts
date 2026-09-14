@@ -30,10 +30,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/over-ons`, changeFrequency: 'yearly' as const, priority: 0.3 },
     { url: `${baseUrl}/privacy`, changeFrequency: 'yearly' as const, priority: 0.2 },
     { url: `${baseUrl}/blog`, changeFrequency: 'weekly' as const, priority: 0.7 },
-    { url: `${baseUrl}/blog/hoe-bereken-je-nettoloon-belgie`, changeFrequency: 'monthly' as const, priority: 0.6 },
-    { url: `${baseUrl}/blog/verschil-bruto-netto-salaris`, changeFrequency: 'monthly' as const, priority: 0.6 },
+    { url: `${baseUrl}/blog/hoe-bereken-je-nettoloon`, changeFrequency: 'monthly' as const, priority: 0.6 },
+    { url: `${baseUrl}/blog/verschil-bruto-netto`, changeFrequency: 'monthly' as const, priority: 0.6 },
     { url: `${baseUrl}/blog/werkbonus-belgie-2026`, changeFrequency: 'monthly' as const, priority: 0.6 },
-    { url: `${baseUrl}/blog/loonindexatie-2026-wat-verandert`, changeFrequency: 'monthly' as const, priority: 0.6 },
+    { url: `${baseUrl}/blog/loonindexatie-2026`, changeFrequency: 'monthly' as const, priority: 0.6 },
     { url: `${baseUrl}/blog/minimumloon-belgie-2026-bedragen-en-regels`, changeFrequency: 'monthly' as const, priority: 0.6 },
   ];
 
