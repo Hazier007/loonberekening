@@ -193,7 +193,7 @@ export default function BrutoNettoVerschilPage() {
               <h3 className="text-xl font-bold text-gray-900 m-0">Werkbonus</h3>
             </div>
             <p className="text-gray-700 mb-0">
-              Werknemers met een laag brutoloon (tot €3.403,62 per maand, vanaf 1 september 2026) komen in aanmerking voor de <Link href="/werkbonus" className="text-teal-700 font-medium hover:underline">werkbonus</Link>. Dit is een vermindering van de persoonlijke RSZ-bijdrage die je nettoloon verhoogt. Het maximum voordeel bedraagt ongeveer <strong>€230 per maand</strong>.
+              Werknemers met een laag brutoloon (tot €3.403,62 per maand, vanaf 1 september 2026) komen in aanmerking voor de <Link href="/blog/werkbonus-belgie-2026" className="text-teal-700 font-medium hover:underline">werkbonus</Link>. Dit is een vermindering van de persoonlijke RSZ-bijdrage die je nettoloon verhoogt. Het maximum voordeel bedraagt voor een bediende ongeveer <strong>€300 per maand</strong>.
             </p>
           </div>
 

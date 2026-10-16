@@ -73,7 +73,7 @@ export default function RSZBijdragePage() {
 
         <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">De werkbonus: RSZ-vermindering voor lage lonen</h2>
         <p>
-          Om werken financieel aantrekkelijker te maken voor werknemers met een laag loon, voerde de overheid de <Link href="/werkbonus">werkbonus</Link> in. Dit is een vermindering van je persoonlijke RSZ-bijdrage voor voltijdse brutolonen tot €3.403,62 per maand (geldig vanaf 1 september 2026).
+          Om werken financieel aantrekkelijker te maken voor werknemers met een laag loon, voerde de overheid de <Link href="/blog/werkbonus-belgie-2026">werkbonus</Link> in. Dit is een vermindering van je persoonlijke RSZ-bijdrage voor voltijdse brutolonen tot €3.403,62 per maand (geldig vanaf 1 september 2026).
         </p>
         <p>
           Voor een bediende bestaat de werkbonus uit luik A (maximaal €127,54, afbouw tussen €2.937,93 en €3.403,62) en luik B (maximaal €171,99, afbouw tussen €2.300,62 en €2.937,93). Tot €2.300,62 bruto krijg je dus het maximum van beide luiken, al kan de werkbonus nooit hoger zijn dan je RSZ-bijdrage zelf. Bij €3.000 bruto bedraagt de werkbonus €110,54. Arbeiders krijgen iets hogere bedragen (luik A €137,74, luik B €185,75). Bron: <a href="https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/deductions/workers_reductions/workbonus.html" target="_blank" rel="noopener noreferrer">RSZ, instructies 2026/3</a>.

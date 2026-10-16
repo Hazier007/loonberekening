@@ -5,6 +5,8 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Werkbonus België — Wie Komt in Aanmerking? Berekening [2026]',
   description: 'De werkbonus in België uitgelegd: wie komt in aanmerking, hoeveel bedraagt de werkbonus, hoe wordt hij berekend? Complete gids met tabellen.',
+  // Canonical naar de blog-URL: die rankt voor werkbonus-zoekopdrachten (SEO-KANNI-002)
+  alternates: { canonical: 'https://loonberekening.be/blog/werkbonus-belgie-2026' },
 };
 
 export default function WerkbonusPage() {

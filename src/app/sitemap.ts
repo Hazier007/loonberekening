@@ -11,7 +11,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/bruto-netto-verschil`, changeFrequency: 'monthly' as const, priority: 0.8 },
     { url: `${baseUrl}/belastingschijven-belgie`, changeFrequency: 'yearly' as const, priority: 0.8 },
     { url: `${baseUrl}/rsz-bijdrage`, changeFrequency: 'yearly' as const, priority: 0.7 },
-    { url: `${baseUrl}/werkbonus`, changeFrequency: 'yearly' as const, priority: 0.7 },
     { url: `${baseUrl}/bedrijfsvoorheffing`, changeFrequency: 'yearly' as const, priority: 0.7 },
     { url: `${baseUrl}/gemiddeld-loon-belgie`, changeFrequency: 'monthly' as const, priority: 0.8 },
     { url: `${baseUrl}/minimumloon-belgie`, changeFrequency: 'yearly' as const, priority: 0.7 },
@@ -33,7 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/blog`, changeFrequency: 'weekly' as const, priority: 0.7 },
     { url: `${baseUrl}/blog/hoe-bereken-je-nettoloon`, changeFrequency: 'monthly' as const, priority: 0.6 },
     { url: `${baseUrl}/blog/verschil-bruto-netto`, changeFrequency: 'monthly' as const, priority: 0.6 },
-    { url: `${baseUrl}/blog/werkbonus-belgie-2026`, changeFrequency: 'monthly' as const, priority: 0.6 },
+    { url: `${baseUrl}/blog/werkbonus-belgie-2026`, changeFrequency: 'monthly' as const, priority: 0.7 },
     { url: `${baseUrl}/blog/loonindexatie-2026`, changeFrequency: 'monthly' as const, priority: 0.6 },
     { url: `${baseUrl}/blog/minimumloon-belgie-2026-bedragen-en-regels`, changeFrequency: 'monthly' as const, priority: 0.6 },
   ];
