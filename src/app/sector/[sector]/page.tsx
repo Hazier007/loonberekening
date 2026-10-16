@@ -14,12 +14,30 @@ export function generateStaticParams() {
   return sectors.map((s) => ({ sector: s.slug }));
 }
 
+const YEAR = 2026;
+
+// Lowercase for use mid-sentence, but keep acronyms like "IT" intact
+function lowerName(name: string): string {
+  return name
+    .split(' ')
+    .map((word) => (word.length > 1 && word === word.toUpperCase() ? word : word.toLowerCase()))
+    .join(' ');
+}
+
+function euro(amount: number): string {
+  return `€${amount.toLocaleString('nl-BE')}`;
+}
+
 export function generateMetadata({ params }: Props): Metadata {
   const sector = getSectorBySlug(params.sector);
   if (!sector) return {};
+  const range = `${euro(sector.minGross)}–${euro(sector.maxGross)}`;
+  const jobs = sector.metaJobs ?? sector.jobs.slice(0, 3).map(lowerName);
+  const jobList = `${jobs.slice(0, -1).join(', ')} of ${jobs[jobs.length - 1]}`;
   return {
-    title: `Loon ${sector.name} in België [2026] — Gemiddeld Salaris & Berekening`,
-    description: `Gemiddeld loon in de sector ${sector.name}: €${sector.avgGross.toLocaleString('nl-BE')} bruto per maand. Bekijk de loonvork, functies en bereken je netto salaris.`,
+    // absolute: no site-name suffix, so the title stays short enough not to be truncated
+    title: { absolute: `Loon ${lowerName(sector.name)} ${YEAR}: ${range} bruto` },
+    description: `Wat verdient een ${jobList} in België? Loonvork ${range} bruto, gemiddeld ${euro(sector.avgGross)}. Bereken je netto.`,
   };
 }
 

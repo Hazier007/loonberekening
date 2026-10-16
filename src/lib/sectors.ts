@@ -6,6 +6,8 @@ export interface Sector {
   maxGross: number;
   description: string;
   jobs: string[];
+  // Optional: functies voor de meta description (anders de eerste drie uit jobs)
+  metaJobs?: string[];
 }
 
 export const sectors: Sector[] = [
@@ -80,6 +82,7 @@ export const sectors: Sector[] = [
     maxGross: 5500,
     description: 'Marketing en communicatie professionals in België verdienen competitieve lonen, vooral in digitale marketing. Met groeiende vraag naar online expertise stijgen de salarissen in deze sector.',
     jobs: ['Marketing Manager', 'Content Strateeg', 'Social Media Manager', 'SEO Specialist', 'Communicatie-adviseur', 'Brand Manager'],
+    metaJobs: ['marketing manager', 'content strateeg', 'SEO-specialist'],
   },
   {
     slug: 'juridisch',
