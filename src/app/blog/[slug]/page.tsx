@@ -181,10 +181,10 @@ function BlogContent({ slug }: { slug: string }) {
         </ul>
 
         <h2>Minimumloon netto: wat hou je over?</h2>
-        <p>Het GGMMI van €2.029,88 bruto vertaalt zich naar ongeveer <strong>€1.613 netto per maand</strong> voor een alleenstaande zonder kinderen. Dit komt door:</p>
+        <p>Het GGMMI van €2.029,88 bruto vertaalt zich naar ongeveer <strong>€1.680 netto per maand</strong> voor een alleenstaande zonder kinderen. Dit komt door:</p>
         <ul>
           <li>RSZ-bijdrage (13,07%): -€265</li>
-          <li>Werkbonus: +€198 (aanzienlijke RSZ-vermindering bij dit loonbedrag)</li>
+          <li>Werkbonus: +€265 (bij dit loon valt je volledige RSZ-bijdrage weg, tarieven vanaf 1 september 2026)</li>
           <li>Bedrijfsvoorheffing: -€297</li>
           <li>Bijzondere bijdrage: -€53</li>
         </ul>
@@ -296,7 +296,7 @@ function BlogContent({ slug }: { slug: string }) {
 
         <h2>Stap 4: Werkbonus (voor lagere lonen)</h2>
         <p>Verdien je een laag tot gemiddeld loon? Dan heb je recht op de <strong>werkbonus</strong>. Dit is een vermindering van je RSZ-bijdrage, waardoor je nettoloon stijgt.</p>
-        <p>De werkbonus geldt voor brutolonen <strong>tot ±€2.961,27</strong> per maand (voltijds). Het maximumbedrag is <strong>€277,83 per maand</strong> bij het minimumloon.</p>
+        <p>De werkbonus geldt voor brutolonen <strong>tot €3.403,62</strong> per maand (voltijds, vanaf 1 september 2026). Voor een bediende bedraagt ze maximaal <strong>€299,53 per maand</strong> (luik A + luik B), beperkt tot je RSZ-bijdrage. Meer details in ons artikel over de <a href="/blog/werkbonus-belgie-2026">werkbonus</a>.</p>
         <p>Boven die grens? Dan krijg je geen werkbonus en is deze stap niet van toepassing.</p>
 
         <h2>De volledige berekening samengevat</h2>
@@ -448,9 +448,9 @@ function BlogContent({ slug }: { slug: string }) {
         <ul>
           <li>RSZ: -€254,87</li>
           <li>Bedrijfsvoorheffing: -€120 (laag door werkbonus + lage schijf)</li>
-          <li>Werkbonus: +€165</li>
-          <li><strong>Netto: ±€1.740</strong></li>
-          <li><strong>Percentage: 89%</strong> van bruto</li>
+          <li>Werkbonus: +€255 (volledige RSZ-bijdrage, tarieven vanaf 1 september 2026)</li>
+          <li><strong>Netto: ±€1.830</strong></li>
+          <li><strong>Percentage: 94%</strong> van bruto</li>
         </ul>
 
         <h3>Voorbeeld 2: Modaal loon (±€3.500 bruto)</h3>
@@ -504,7 +504,7 @@ function BlogContent({ slug }: { slug: string }) {
           <li><strong>Woonplaats</strong>: gemeentebelasting verschilt van 0% tot 9%</li>
           <li><strong>Statuut</strong>: arbeiders krijgen 8% extra bruto voor vakantiegeld</li>
           <li><strong>Partner</strong>: het huwelijksquotiënt kan voordelig zijn</li>
-          <li><strong>Werkbonus</strong>: alleen voor lonen onder ±€2.961</li>
+          <li><strong>Werkbonus</strong>: alleen voor lonen onder €3.403,62 (vanaf 1 september 2026)</li>
         </ul>
 
         <h2>Tips om meer netto over te houden</h2>
@@ -549,90 +549,130 @@ function BlogContent({ slug }: { slug: string }) {
         <ul>
           <li>Je bent <strong>werknemer</strong> in de privésector (of contractueel bij de overheid)</li>
           <li>Je werkt <strong>voltijds of deeltijds</strong></li>
-          <li>Je bruto referteloon ligt <strong>onder de bovengrens</strong> (±€2.961,27 in 2025-2026)</li>
+          <li>Je voltijds bruto referteloon ligt <strong>onder de bovengrens</strong> (€3.403,62 vanaf 1 september 2026)</li>
         </ul>
         <p>Zelfstandigen, ambtenaren met een statutair statuut en studenten met een studentencontract komen <strong>niet</strong> in aanmerking.</p>
 
-        <h2>Bedragen werkbonus 2025-2026</h2>
-        <p>De werkbonus wordt berekend op basis van je <strong>bruto referentiemaandloon</strong>. Er zijn twee categorieën: arbeiders en bedienden.</p>
+        <h2>Bedragen werkbonus vanaf 1 september 2026</h2>
+        <p>De werkbonus wordt berekend op basis van je <strong>voltijds bruto refertemaandloon (S)</strong>. Sinds 1 april 2024 bestaat ze uit twee luiken: <strong>luik A</strong> voor lage lonen en <strong>luik B</strong> voor zeer lage lonen. Je werkbonus is de som van beide. Er zijn aparte bedragen voor bedienden en arbeiders.</p>
 
-        <h3>Tabel: Werkbonus voor bedienden (voltijds)</h3>
+        <h3>Tabel: Werkbonus voor bedienden (geldig vanaf 1 september 2026)</h3>
         <div className="overflow-x-auto my-6">
           <table className="min-w-full border border-gray-300 rounded-lg">
             <thead>
               <tr className="bg-gray-100">
-                <th className="border border-gray-300 px-4 py-2 text-left font-semibold">Bruto maandloon</th>
+                <th className="border border-gray-300 px-4 py-2 text-left font-semibold">Luik</th>
+                <th className="border border-gray-300 px-4 py-2 text-left font-semibold">Bruto maandloon (S)</th>
                 <th className="border border-gray-300 px-4 py-2 text-left font-semibold">Werkbonus (maandelijks)</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td className="border border-gray-300 px-4 py-2">≤ €1.945,38 (GGMMI)</td>
-                <td className="border border-gray-300 px-4 py-2"><strong>€277,83</strong> (maximum)</td>
-              </tr>
-              <tr className="bg-gray-50">
-                <td className="border border-gray-300 px-4 py-2">€1.945,39 – €2.961,27</td>
-                <td className="border border-gray-300 px-4 py-2">Degressief (lineaire afbouw)</td>
+                <td className="border border-gray-300 px-4 py-2">A</td>
+                <td className="border border-gray-300 px-4 py-2">≤ €2.937,93</td>
+                <td className="border border-gray-300 px-4 py-2"><strong>€127,54</strong></td>
               </tr>
               <tr>
-                <td className="border border-gray-300 px-4 py-2">&gt; €2.961,27</td>
-                <td className="border border-gray-300 px-4 py-2"><strong>€0</strong> (geen recht)</td>
+                <td className="border border-gray-300 px-4 py-2">A</td>
+                <td className="border border-gray-300 px-4 py-2">€2.937,93 – €3.403,62</td>
+                <td className="border border-gray-300 px-4 py-2">€127,54 − 0,2739 × (S − €2.937,93)</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">A</td>
+                <td className="border border-gray-300 px-4 py-2">&gt; €3.403,62</td>
+                <td className="border border-gray-300 px-4 py-2">€0</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-4 py-2">B</td>
+                <td className="border border-gray-300 px-4 py-2">≤ €2.300,62</td>
+                <td className="border border-gray-300 px-4 py-2"><strong>€171,99</strong></td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-4 py-2">B</td>
+                <td className="border border-gray-300 px-4 py-2">€2.300,62 – €2.937,93</td>
+                <td className="border border-gray-300 px-4 py-2">€171,99 − 0,2699 × (S − €2.300,62)</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-4 py-2">B</td>
+                <td className="border border-gray-300 px-4 py-2">&gt; €2.937,93</td>
+                <td className="border border-gray-300 px-4 py-2">€0</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <h3>Tabel: Werkbonus voor arbeiders (voltijds)</h3>
+        <h3>Tabel: Werkbonus voor arbeiders (geldig vanaf 1 september 2026)</h3>
         <div className="overflow-x-auto my-6">
           <table className="min-w-full border border-gray-300 rounded-lg">
             <thead>
               <tr className="bg-gray-100">
-                <th className="border border-gray-300 px-4 py-2 text-left font-semibold">Bruto maandloon</th>
+                <th className="border border-gray-300 px-4 py-2 text-left font-semibold">Luik</th>
+                <th className="border border-gray-300 px-4 py-2 text-left font-semibold">Bruto maandloon (S)</th>
                 <th className="border border-gray-300 px-4 py-2 text-left font-semibold">Werkbonus (maandelijks)</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td className="border border-gray-300 px-4 py-2">≤ €1.945,38 × 1,08 = €2.100,01</td>
-                <td className="border border-gray-300 px-4 py-2"><strong>€300,06</strong> (maximum)</td>
-              </tr>
-              <tr className="bg-gray-50">
-                <td className="border border-gray-300 px-4 py-2">€2.100,02 – €3.198,17</td>
-                <td className="border border-gray-300 px-4 py-2">Degressief (lineaire afbouw)</td>
+                <td className="border border-gray-300 px-4 py-2">A</td>
+                <td className="border border-gray-300 px-4 py-2">≤ €2.937,93</td>
+                <td className="border border-gray-300 px-4 py-2"><strong>€137,74</strong></td>
               </tr>
               <tr>
-                <td className="border border-gray-300 px-4 py-2">&gt; €3.198,17</td>
-                <td className="border border-gray-300 px-4 py-2"><strong>€0</strong> (geen recht)</td>
+                <td className="border border-gray-300 px-4 py-2">A</td>
+                <td className="border border-gray-300 px-4 py-2">€2.937,93 – €3.403,62</td>
+                <td className="border border-gray-300 px-4 py-2">€137,74 − 0,2958 × (S − €2.937,93)</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-2">A</td>
+                <td className="border border-gray-300 px-4 py-2">&gt; €3.403,62</td>
+                <td className="border border-gray-300 px-4 py-2">€0</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-4 py-2">B</td>
+                <td className="border border-gray-300 px-4 py-2">≤ €2.300,62</td>
+                <td className="border border-gray-300 px-4 py-2"><strong>€185,75</strong></td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-4 py-2">B</td>
+                <td className="border border-gray-300 px-4 py-2">€2.300,62 – €2.937,93</td>
+                <td className="border border-gray-300 px-4 py-2">€185,75 − 0,2915 × (S − €2.300,62)</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-4 py-2">B</td>
+                <td className="border border-gray-300 px-4 py-2">&gt; €2.937,93</td>
+                <td className="border border-gray-300 px-4 py-2">€0</td>
               </tr>
             </tbody>
           </table>
         </div>
-        <p><em>Arbeiders krijgen een hoger bedrag omdat hun brutoloon 8% vakantiegeld bevat.</em></p>
+        <p><em>Bron: <a href="https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/deductions/workers_reductions/workbonus.html" target="_blank" rel="noopener noreferrer">RSZ, administratieve instructies 2026/3 — Werkbonus</a>. Arbeiders krijgen hogere bedragen omdat hun RSZ-bijdrage op 108% van het brutoloon wordt berekend. De werkbonus kan nooit hoger zijn dan je persoonlijke RSZ-bijdrage.</em></p>
 
         <h2>Hoe wordt de werkbonus berekend?</h2>
-        <p>De berekening is lineair degressief. Dat betekent: hoe hoger je loon, hoe lager de werkbonus — tot nul.</p>
+        <p>Beide luiken zijn lineair degressief: boven de ondergrens daalt het bedrag met een vast percentage per euro extra loon, tot nul.</p>
 
         <h3>Formule voor bedienden</h3>
         <div className="bg-gray-100 p-4 rounded-lg my-4 font-mono text-sm">
-          Werkbonus = €277,83 - (€0,2736 × (bruto - €1.945,38))
+          Luik A = €127,54 − (0,2739 × (S − €2.937,93)), maximaal €127,54<br />
+          Luik B = €171,99 − (0,2699 × (S − €2.300,62)), maximaal €171,99<br />
+          Werkbonus = luik A + luik B
         </div>
-        <p>Als het resultaat negatief is → werkbonus = €0.</p>
+        <p>Is een luik negatief → dat luik = €0.</p>
 
-        <h3>Rekenvoorbeeld 1: Bruto €2.200</h3>
+        <h3>Rekenvoorbeeld 1: bediende, bruto €2.500</h3>
         <div className="bg-gray-100 p-4 rounded-lg my-4 font-mono text-sm">
-          Werkbonus = €277,83 - (€0,2736 × (€2.200 - €1.945,38))<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = €277,83 - (€0,2736 × €254,62)<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = €277,83 - €69,66<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = €208,17 per maand
+          Luik A = €127,54 (loon onder €2.937,93)<br />
+          Luik B = €171,99 − (0,2699 × (€2.500 − €2.300,62))<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= €171,99 − €53,81 = €118,18<br />
+          Werkbonus = €127,54 + €118,18 = <strong>€245,72 per maand</strong>
         </div>
-        <p>Bij een bruto van €2.200 krijg je dus <strong>€208,17 extra netto per maand</strong>.</p>
 
-        <h3>Rekenvoorbeeld 2: Bruto €2.700</h3>
+        <h3>Rekenvoorbeeld 2: bediende, bruto €3.000</h3>
         <div className="bg-gray-100 p-4 rounded-lg my-4 font-mono text-sm">
-          Werkbonus = €277,83 - (€0,2736 × (€2.700 - €1.945,38))<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = €277,83 - (€0,2736 × €754,62)<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = €277,83 - €206,46<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = €71,37 per maand
+          Luik A = €127,54 − (0,2739 × (€3.000 − €2.937,93))<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= €127,54 − (0,2739 × €62,07)<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= €127,54 − €17,00 = €110,54<br />
+          Luik B = €0 (loon boven €2.937,93)<br />
+          Werkbonus = <strong>€110,54 per maand</strong>
         </div>
 
         <h2>Impact op je nettoloon</h2>
@@ -650,62 +690,61 @@ function BlogContent({ slug }: { slug: string }) {
             </thead>
             <tbody>
               <tr>
-                <td className="border border-gray-300 px-4 py-2">€1.950</td>
-                <td className="border border-gray-300 px-4 py-2">€1.490</td>
-                <td className="border border-gray-300 px-4 py-2">€1.768</td>
-                <td className="border border-gray-300 px-4 py-2 font-bold text-green-600">+€278</td>
+                <td className="border border-gray-300 px-4 py-2">€2.000</td>
+                <td className="border border-gray-300 px-4 py-2">€1.383</td>
+                <td className="border border-gray-300 px-4 py-2">€1.645</td>
+                <td className="border border-gray-300 px-4 py-2 font-bold text-green-600">+€261</td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="border border-gray-300 px-4 py-2">€2.200</td>
-                <td className="border border-gray-300 px-4 py-2">€1.640</td>
-                <td className="border border-gray-300 px-4 py-2">€1.848</td>
-                <td className="border border-gray-300 px-4 py-2 font-bold text-green-600">+€208</td>
+                <td className="border border-gray-300 px-4 py-2">€2.300</td>
+                <td className="border border-gray-300 px-4 py-2">€1.540</td>
+                <td className="border border-gray-300 px-4 py-2">€1.839</td>
+                <td className="border border-gray-300 px-4 py-2 font-bold text-green-600">+€300</td>
               </tr>
               <tr>
                 <td className="border border-gray-300 px-4 py-2">€2.500</td>
-                <td className="border border-gray-300 px-4 py-2">€1.824</td>
-                <td className="border border-gray-300 px-4 py-2">€1.945</td>
-                <td className="border border-gray-300 px-4 py-2 font-bold text-green-600">+€121</td>
+                <td className="border border-gray-300 px-4 py-2">€1.644</td>
+                <td className="border border-gray-300 px-4 py-2">€1.890</td>
+                <td className="border border-gray-300 px-4 py-2 font-bold text-green-600">+€246</td>
               </tr>
               <tr className="bg-gray-50">
                 <td className="border border-gray-300 px-4 py-2">€2.800</td>
-                <td className="border border-gray-300 px-4 py-2">€2.000</td>
-                <td className="border border-gray-300 px-4 py-2">€2.044</td>
-                <td className="border border-gray-300 px-4 py-2 font-bold text-green-600">+€44</td>
+                <td className="border border-gray-300 px-4 py-2">€1.791</td>
+                <td className="border border-gray-300 px-4 py-2">€1.955</td>
+                <td className="border border-gray-300 px-4 py-2 font-bold text-green-600">+€165</td>
               </tr>
               <tr>
                 <td className="border border-gray-300 px-4 py-2">€3.000</td>
-                <td className="border border-gray-300 px-4 py-2">€2.118</td>
-                <td className="border border-gray-300 px-4 py-2">€2.118</td>
-                <td className="border border-gray-300 px-4 py-2">+€0</td>
+                <td className="border border-gray-300 px-4 py-2">€1.886</td>
+                <td className="border border-gray-300 px-4 py-2">€1.997</td>
+                <td className="border border-gray-300 px-4 py-2 font-bold text-green-600">+€111</td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-4 py-2">€3.200</td>
+                <td className="border border-gray-300 px-4 py-2">€1.982</td>
+                <td className="border border-gray-300 px-4 py-2">€2.038</td>
+                <td className="border border-gray-300 px-4 py-2 font-bold text-green-600">+€56</td>
               </tr>
             </tbody>
           </table>
         </div>
-        <p><em>Geschatte nettobedragen voor een alleenstaande bediende zonder kinderen.</em></p>
+        <p><em>Geschatte nettobedragen met onze calculator voor een alleenstaande bediende zonder kinderen, enkel sociale werkbonus (zonder fiscale werkbonus).</em></p>
 
-        <p>Bij het minimumloon maakt de werkbonus het verschil van bijna <strong>€280 per maand</strong> — dat is meer dan €3.300 per jaar!</p>
+        <p>Rond €2.300 bruto maakt de werkbonus het verschil van ongeveer <strong>€300 per maand</strong> — dat is zo'n €3.600 per jaar.</p>
 
         <h2>Deeltijds werken en de werkbonus</h2>
         <p>Werk je deeltijds? Dan wordt de werkbonus <strong>proportioneel</strong> berekend op basis van je tewerkstellingspercentage.</p>
-        <p><strong>Voorbeeld:</strong> Je werkt 4/5 (80%) met een deeltijds bruto van €2.000.</p>
+        <p><strong>Voorbeeld:</strong> Je werkt 4/5 (80%) als bediende met een deeltijds bruto van €2.000.</p>
         <ol>
           <li>Referteloon voltijds equivalent: €2.000 / 0,80 = <strong>€2.500</strong></li>
-          <li>Werkbonus op voltijdse basis: ±€121</li>
-          <li>Jouw werkbonus (80%): €121 × 0,80 = <strong>€96,80 per maand</strong></li>
+          <li>Werkbonus op voltijdse basis: €245,72</li>
+          <li>Jouw werkbonus (80%): €245,72 × 0,80 = <strong>±€196,58 per maand</strong></li>
         </ol>
 
         <h2>Fiscale werkbonus: extra voordeel</h2>
-        <p>Naast de sociale werkbonus (vermindering RSZ) bestaat er ook een <strong>fiscale werkbonus</strong>. Dit is een vermindering van je bedrijfsvoorheffing.</p>
-        <p>De fiscale werkbonus bedraagt <strong>33,14%</strong> van de sociale werkbonus. Dit komt <strong>bovenop</strong> de sociale werkbonus.</p>
-
-        <h3>Totaal voordeel bij maximale werkbonus</h3>
-        <ul>
-          <li>Sociale werkbonus: €277,83</li>
-          <li>Fiscale werkbonus: €277,83 × 33,14% = <strong>€92,05</strong></li>
-          <li><strong>Totaal: €369,88 per maand</strong></li>
-        </ul>
-        <p>Dat is bijna <strong>€4.440 per jaar</strong> meer netto!</p>
+        <p>Naast de sociale werkbonus (vermindering RSZ) bestaat er ook een <strong>fiscale werkbonus</strong>. Dit is een vermindering van je bedrijfsvoorheffing die <strong>bovenop</strong> de sociale werkbonus komt.</p>
+        <p>De fiscale werkbonus bedraagt <strong>33,14%</strong> van de werkbonus uit luik A. Voor luik B (zeer lage lonen) gold tot nu 52,54%.</p>
+        <p>Volgens recente wetswijziging (wet van 15 juli 2026 tot hervorming van de personenbelasting, BS 29 juli 2026) stijgt het percentage voor luik B naar <strong>63%</strong> vanaf inkomstenjaar 2026 (in de bedrijfsvoorheffing toegepast vanaf 1 augustus 2026) en naar 72% vanaf 2028. Luik A gaat in 2028 naar 35%. Het jaarlijkse maximum stijgt van €765 naar €970 (niet-geïndexeerde bedragen). Bron: <a href="https://www.clbgroup.be/nieuws/fiscale-werkbonus-wordt-verhoogd-in-2026-en-2028/" target="_blank" rel="noopener noreferrer">CLB Group</a>.</p>
 
         <h2>Veelgestelde vragen</h2>
 
@@ -721,7 +760,7 @@ function BlogContent({ slug }: { slug: string }) {
         <h3>Telt mijn eindejaarspremie mee?</h3>
         <p>Nee, de werkbonus wordt berekend op basis van je gewone maandloon. Premies en voordelen in natura tellen niet mee voor het referteloon.</p>
 
-        <p><em>Bedragen gebaseerd op de officiële RSZ-tabellen 2025-2026. Raadpleeg de RSZ of je sociaal secretariaat voor de meest recente cijfers.</em></p>
+        <p><em>Bedragen geldig vanaf 1 september 2026, op basis van de officiële RSZ-instructies 2026/3. Raadpleeg de RSZ of je sociaal secretariaat voor de meest recente cijfers.</em></p>
       </>
     ),
 
@@ -923,13 +962,13 @@ function BlogContent({ slug }: { slug: string }) {
         <p><em>Schatting voor alleenstaande bediende zonder kinderen.</em></p>
 
         <h2>Loonindexatie en je werkbonus</h2>
-        <p>Als je loon dicht bij de <strong>bovengrenzen van de werkbonus</strong> zit (±€2.961 voor bedienden), kan de indexatie je over die grens duwen. Het gevolg:</p>
+        <p>Als je loon dicht bij de <strong>bovengrenzen van de werkbonus</strong> zit (€3.403,62 vanaf 1 september 2026), kan de indexatie je over die grens duwen. Het gevolg:</p>
         <ul>
           <li>Je verliest (een deel van) je werkbonus</li>
           <li>Je bruto stijgt, maar je netto kan <strong>dalen</strong></li>
         </ul>
         <p>Dit overgangseffect treft elk jaar een groep werknemers. Het is een van de vreemdste situaties in het Belgische loonsysteem.</p>
-        <p><strong>Voorbeeld:</strong> Je verdient €2.900 bruto en krijgt ±€16 werkbonus. Na indexatie verdien je €2.958 — net onder de grens, maar je werkbonus zakt naar ±€1. Netto merk je amper verschil.</p>
+        <p><strong>Voorbeeld:</strong> Je verdient €3.300 bruto als bediende en krijgt ±€28 werkbonus. Na een indexatie van 2% verdien je €3.366 — nog onder de grens, maar je werkbonus zakt naar ±€10. Van je brutostijging van €66 blijft netto dus maar een klein deel over.</p>
 
         <p><em>Artikel bijgewerkt: februari 2026. Exacte indexatiepercentages per sector worden jaarlijks bepaald. Raadpleeg je sociaal secretariaat of vakbond voor je specifieke situatie.</em></p>
       </>

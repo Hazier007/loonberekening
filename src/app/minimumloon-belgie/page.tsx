@@ -54,10 +54,10 @@ export default function MinimumloonPage() {
           <tbody>
             <tr><td>Bruto maandloon</td><td>€2.029,88</td></tr>
             <tr><td>RSZ-bijdrage (13,07%)</td><td>- €265,30</td></tr>
-            <tr><td>Werkbonus</td><td>+ €229,98</td></tr>
-            <tr><td>Effectieve RSZ</td><td>- €35,32</td></tr>
+            <tr><td>Werkbonus</td><td>+ €265,30</td></tr>
+            <tr><td>Effectieve RSZ</td><td>- €0,00</td></tr>
             <tr><td>Bedrijfsvoorheffing</td><td>- €161,25</td></tr>
-            <tr><td><strong>Netto maandloon</strong></td><td><strong>~€1.833</strong></td></tr>
+            <tr><td><strong>Netto maandloon</strong></td><td><strong>~€1.869</strong></td></tr>
           </tbody>
         </table>
         <p>

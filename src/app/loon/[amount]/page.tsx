@@ -113,7 +113,7 @@ export default function LoonPage({ params }: Props) {
           <li>Vraag aan je werkgever om extralegale voordelen zoals <Link href="/vakantiegeld-berekenen">vakantiegeld</Link>, maaltijdcheques of een bedrijfswagen. Deze zijn vaak fiscaal voordeliger.</li>
           <li>Met kinderen ten laste daalt je bedrijfsvoorheffing aanzienlijk. Gebruik onze <Link href="/calculator">calculator</Link> om het verschil te zien.</li>
           <li>Bekijk de <Link href="/belastingschijven-belgie">belastingschijven</Link> om te begrijpen hoe je belasting berekend wordt.</li>
-          <li>Lees meer over de <Link href="/werkbonus">werkbonus</Link> als je brutoloon onder €3.144 per maand ligt.</li>
+          <li>Lees meer over de <Link href="/werkbonus">werkbonus</Link> als je brutoloon onder €3.403,62 per maand ligt.</li>
         </ul>
       </div>
 

@@ -119,15 +119,15 @@ export default function ArbeiderCalc() {
 
         <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Werkbonus voor arbeiders</h2>
         <p className="text-lg text-gray-600 mb-6">
-          Veel arbeiders verdienen minder dan €3.144 per maand en komen daardoor in aanmerking voor de <Link href="/werkbonus" className="text-teal-700 font-medium hover:underline">werkbonus</Link>. Dit is een vermindering van je RSZ-bijdrage die je nettoloon verhoogt:
+          Veel arbeiders verdienen minder dan €3.403,62 per maand (voltijds, grens vanaf 1 september 2026) en komen daardoor in aanmerking voor de <Link href="/werkbonus" className="text-teal-700 font-medium hover:underline">werkbonus</Link>. Dit is een vermindering van je RSZ-bijdrage die je nettoloon verhoogt:
         </p>
 
         <div className="bg-green-50 rounded-xl p-6 mb-8">
           <ul className="space-y-2 mb-0">
-            <li className="flex justify-between"><span>Bruto €2.000/maand:</span><strong className="text-green-700">+€230 werkbonus</strong></li>
-            <li className="flex justify-between"><span>Bruto €2.500/maand:</span><strong className="text-green-700">+€139 werkbonus</strong></li>
-            <li className="flex justify-between"><span>Bruto €3.000/maand:</span><strong className="text-green-700">+€31 werkbonus</strong></li>
-            <li className="flex justify-between"><span>Bruto €3.144/maand:</span><strong className="text-gray-500">€0 (grens bereikt)</strong></li>
+                        <li className="flex justify-between"><span>Bruto €2.500/maand:</span><strong className="text-green-700">+€265 werkbonus</strong></li>
+            <li className="flex justify-between"><span>Bruto €3.000/maand:</span><strong className="text-green-700">+€119 werkbonus</strong></li>
+            <li className="flex justify-between"><span>Bruto €3.200/maand:</span><strong className="text-green-700">+€60 werkbonus</strong></li>
+            <li className="flex justify-between"><span>Bruto €3.500/maand:</span><strong className="text-gray-500">€0 (grens bereikt)</strong></li>
           </ul>
         </div>
 

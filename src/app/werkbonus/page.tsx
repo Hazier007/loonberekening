@@ -56,10 +56,10 @@ export default function WerkbonusPage() {
             <span className="text-4xl">✅</span>
             <div>
               <p className="text-lg text-gray-900 font-semibold mb-2">
-                Je komt in aanmerking als je bruto maandloon niet hoger is dan circa <span className="text-teal-700">€3.144,45</span>
+                Je komt in aanmerking als je voltijds bruto maandloon niet hoger is dan <span className="text-teal-700">€3.403,62</span>
               </p>
               <p className="text-sm text-gray-600 mb-0">
-                Dit bedrag wordt jaarlijks geïndexeerd en kan dus lichtjes stijgen.
+                Grens geldig vanaf 1 september 2026. De bedragen worden geïndexeerd en aangepast bij stijgingen van het minimumloon.
               </p>
             </div>
           </div>
@@ -91,37 +91,59 @@ export default function WerkbonusPage() {
 
         <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Hoeveel bedraagt de werkbonus?</h2>
         <p className="text-lg text-gray-600 mb-6">
-          Het bedrag van de sociale werkbonus (RSZ-vermindering) hangt af van je brutoloon:
+          De sociale werkbonus (RSZ-vermindering) bestaat uit twee luiken: <strong>luik A</strong> voor lage lonen en <strong>luik B</strong> voor zeer lage lonen. Je werkbonus is de som van beide. S is je voltijds bruto refertemaandloon.
         </p>
 
+        <h3 className="text-2xl font-bold text-gray-900 mb-4">Bedienden — geldig vanaf 1 september 2026</h3>
         <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 border border-gray-200 shadow-md mb-8">
-          <div className="bg-white rounded-xl overflow-hidden">
-            <table className="w-full">
+          <div className="bg-white rounded-xl overflow-x-auto">
+            <table className="w-full text-sm">
               <thead className="bg-teal-700">
                 <tr>
-                  <th className="text-left text-white font-semibold px-6 py-4">Bruto maandloon</th>
-                  <th className="text-left text-white font-semibold px-6 py-4">Sociale werkbonus</th>
+                  <th className="text-left text-white font-semibold px-4 py-3">Luik</th>
+                  <th className="text-left text-white font-semibold px-4 py-3">Bruto maandloon (S)</th>
+                  <th className="text-left text-white font-semibold px-4 py-3">Vermindering</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
-                <tr className="bg-green-50 hover:bg-green-100">
-                  <td className="px-6 py-4 text-gray-900 font-medium">Tot €2.078,49</td>
-                  <td className="px-6 py-4 font-bold text-green-700">€229,98 (maximum)</td>
-                </tr>
-                <tr className="bg-yellow-50 hover:bg-yellow-100">
-                  <td className="px-6 py-4 text-gray-900 font-medium">€2.078,49 — €3.144,45</td>
-                  <td className="px-6 py-4 text-orange-700 font-medium">Degressief aflopend</td>
-                </tr>
-                <tr className="bg-red-50 hover:bg-red-100">
-                  <td className="px-6 py-4 text-gray-900 font-medium">Boven €3.144,45</td>
-                  <td className="px-6 py-4 text-gray-500 font-medium">€0 (geen recht)</td>
-                </tr>
+                <tr><td className="px-4 py-3 font-medium">A</td><td className="px-4 py-3">≤ €2.937,93</td><td className="px-4 py-3 font-bold text-green-700">€127,54</td></tr>
+                <tr><td className="px-4 py-3 font-medium">A</td><td className="px-4 py-3">€2.937,93 – €3.403,62</td><td className="px-4 py-3">€127,54 − 0,2739 × (S − €2.937,93)</td></tr>
+                <tr><td className="px-4 py-3 font-medium">A</td><td className="px-4 py-3">&gt; €3.403,62</td><td className="px-4 py-3 text-gray-500">€0</td></tr>
+                <tr className="bg-gray-50"><td className="px-4 py-3 font-medium">B</td><td className="px-4 py-3">≤ €2.300,62</td><td className="px-4 py-3 font-bold text-green-700">€171,99</td></tr>
+                <tr className="bg-gray-50"><td className="px-4 py-3 font-medium">B</td><td className="px-4 py-3">€2.300,62 – €2.937,93</td><td className="px-4 py-3">€171,99 − 0,2699 × (S − €2.300,62)</td></tr>
+                <tr className="bg-gray-50"><td className="px-4 py-3 font-medium">B</td><td className="px-4 py-3">&gt; €2.937,93</td><td className="px-4 py-3 text-gray-500">€0</td></tr>
               </tbody>
             </table>
           </div>
         </div>
 
-        <h3 className="text-2xl font-bold text-gray-900 mb-4">Voorbeelden sociale werkbonus</h3>
+        <h3 className="text-2xl font-bold text-gray-900 mb-4">Arbeiders — geldig vanaf 1 september 2026</h3>
+        <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 border border-gray-200 shadow-md mb-4">
+          <div className="bg-white rounded-xl overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead className="bg-teal-700">
+                <tr>
+                  <th className="text-left text-white font-semibold px-4 py-3">Luik</th>
+                  <th className="text-left text-white font-semibold px-4 py-3">Bruto maandloon (S)</th>
+                  <th className="text-left text-white font-semibold px-4 py-3">Vermindering</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr><td className="px-4 py-3 font-medium">A</td><td className="px-4 py-3">≤ €2.937,93</td><td className="px-4 py-3 font-bold text-green-700">€137,74</td></tr>
+                <tr><td className="px-4 py-3 font-medium">A</td><td className="px-4 py-3">€2.937,93 – €3.403,62</td><td className="px-4 py-3">€137,74 − 0,2958 × (S − €2.937,93)</td></tr>
+                <tr><td className="px-4 py-3 font-medium">A</td><td className="px-4 py-3">&gt; €3.403,62</td><td className="px-4 py-3 text-gray-500">€0</td></tr>
+                <tr className="bg-gray-50"><td className="px-4 py-3 font-medium">B</td><td className="px-4 py-3">≤ €2.300,62</td><td className="px-4 py-3 font-bold text-green-700">€185,75</td></tr>
+                <tr className="bg-gray-50"><td className="px-4 py-3 font-medium">B</td><td className="px-4 py-3">€2.300,62 – €2.937,93</td><td className="px-4 py-3">€185,75 − 0,2915 × (S − €2.300,62)</td></tr>
+                <tr className="bg-gray-50"><td className="px-4 py-3 font-medium">B</td><td className="px-4 py-3">&gt; €2.937,93</td><td className="px-4 py-3 text-gray-500">€0</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <p className="text-sm text-gray-600 mb-8">
+          Bron: <a href="https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/deductions/workers_reductions/workbonus.html" target="_blank" rel="noopener noreferrer" className="text-teal-700 hover:underline">RSZ, administratieve instructies 2026/3 — Werkbonus</a>. De vermindering kan nooit hoger zijn dan je persoonlijke RSZ-bijdrage.
+        </p>
+
+        <h3 className="text-2xl font-bold text-gray-900 mb-4">Voorbeelden sociale werkbonus (bediende, vanaf 1 september 2026)</h3>
         
         <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 border border-gray-200 shadow-md mb-10">
           <div className="bg-white rounded-xl overflow-hidden">
@@ -138,26 +160,26 @@ export default function WerkbonusPage() {
                 <tr className="bg-white hover:bg-gray-50">
                   <td className="px-4 py-3 font-medium text-gray-900">€2.000</td>
                   <td className="px-4 py-3 text-right text-gray-700">€261,40</td>
-                  <td className="px-4 py-3 text-right font-bold text-green-600">€229,98</td>
-                  <td className="px-4 py-3 text-right font-bold text-teal-700">€31,42</td>
+                  <td className="px-4 py-3 text-right font-bold text-green-600">€261,40*</td>
+                  <td className="px-4 py-3 text-right font-bold text-teal-700">€0,00</td>
                 </tr>
                 <tr className="bg-gray-50 hover:bg-gray-100">
                   <td className="px-4 py-3 font-medium text-gray-900">€2.500</td>
                   <td className="px-4 py-3 text-right text-gray-700">€326,75</td>
-                  <td className="px-4 py-3 text-right font-bold text-green-600">€138,91</td>
-                  <td className="px-4 py-3 text-right font-bold text-teal-700">€187,84</td>
+                  <td className="px-4 py-3 text-right font-bold text-green-600">€245,72</td>
+                  <td className="px-4 py-3 text-right font-bold text-teal-700">€81,03</td>
                 </tr>
                 <tr className="bg-white hover:bg-gray-50">
                   <td className="px-4 py-3 font-medium text-gray-900">€3.000</td>
                   <td className="px-4 py-3 text-right text-gray-700">€392,10</td>
-                  <td className="px-4 py-3 text-right font-bold text-green-600">€31,12</td>
-                  <td className="px-4 py-3 text-right font-bold text-teal-700">€360,98</td>
+                  <td className="px-4 py-3 text-right font-bold text-green-600">€110,54</td>
+                  <td className="px-4 py-3 text-right font-bold text-teal-700">€281,56</td>
                 </tr>
                 <tr className="bg-gray-50 hover:bg-gray-100">
-                  <td className="px-4 py-3 font-medium text-gray-900">€3.144</td>
-                  <td className="px-4 py-3 text-right text-gray-700">€410,92</td>
-                  <td className="px-4 py-3 text-right font-bold text-orange-600">€0,10</td>
-                  <td className="px-4 py-3 text-right font-bold text-teal-700">€410,82</td>
+                  <td className="px-4 py-3 font-medium text-gray-900">€3.200</td>
+                  <td className="px-4 py-3 text-right text-gray-700">€418,24</td>
+                  <td className="px-4 py-3 text-right font-bold text-orange-600">€55,76</td>
+                  <td className="px-4 py-3 text-right font-bold text-teal-700">€362,48</td>
                 </tr>
                 <tr className="bg-white hover:bg-gray-50">
                   <td className="px-4 py-3 font-medium text-gray-900">€3.500</td>
@@ -168,6 +190,9 @@ export default function WerkbonusPage() {
               </tbody>
             </table>
           </div>
+          <p className="text-xs text-gray-500 mt-3 mb-0">
+            * Berekend: €127,54 (luik A) + €171,99 (luik B) = €299,53, maar de werkbonus is beperkt tot je persoonlijke RSZ-bijdrage. Rekenvoorbeeld €3.000: €127,54 − 0,2739 × (€3.000 − €2.937,93) = €110,54 (luik B is €0).
+          </p>
         </div>
 
         <div className="bg-purple-50 rounded-xl border-l-4 border-purple-500 p-6 mb-10">
@@ -176,11 +201,11 @@ export default function WerkbonusPage() {
             <div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">De fiscale werkbonus</h3>
               <p className="text-gray-700 mb-3">
-                Naast de sociale werkbonus geniet je ook van een <strong>fiscale werkbonus</strong>. Dit is een vermindering van de bedrijfsvoorheffing die bovenop de RSZ-vermindering komt. Het fiscale voordeel bedraagt ongeveer 33,14% van de sociale werkbonus.
+                Naast de sociale werkbonus geniet je ook van een <strong>fiscale werkbonus</strong>. Dit is een vermindering van de bedrijfsvoorheffing die bovenop de RSZ-vermindering komt. Ze bedraagt 33,14% van de werkbonus uit luik A en een hoger percentage van de werkbonus uit luik B.
               </p>
               <div className="bg-white rounded-lg p-4 border border-purple-200">
                 <p className="text-sm text-gray-700 mb-0">
-                  💡 Bij het maximum van de sociale werkbonus (€229,98) bedraagt de fiscale werkbonus dus circa <strong>€76,22 per maand</strong>. Samen met de sociale component is het totale voordeel dan <strong>meer dan €300 per maand</strong>.
+                  💡 Volgens recente wetswijziging (wet van 15 juli 2026, BS 29 juli 2026) stijgt het percentage voor luik B van 52,54% naar <strong>63%</strong> (in de bedrijfsvoorheffing vanaf 1 augustus 2026) en het jaarlijkse maximum van €765 naar €970 (niet-geïndexeerd) vanaf inkomstenjaar 2026. Luik A blijft 33,14% tot en met 2027. Bron: <a href="https://www.clbgroup.be/nieuws/fiscale-werkbonus-wordt-verhoogd-in-2026-en-2028/" target="_blank" rel="noopener noreferrer" className="text-teal-700 hover:underline">CLB Group</a>.
                 </p>
               </div>
             </div>
@@ -222,7 +247,7 @@ export default function WerkbonusPage() {
           <div className="border-t border-teal-600 pt-6">
             <p className="text-center text-teal-100 text-sm font-medium mb-4">Of bekijk direct voorbeelden:</p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-2xl mx-auto">
-              {[2000, 2500, 3000, 3144].map((amount) => (
+              {[2000, 2500, 3000, 3500].map((amount) => (
                 <Link
                   key={amount}
                   href={`/loon/${amount}`}

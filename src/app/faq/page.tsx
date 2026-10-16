@@ -45,7 +45,7 @@ const jsonLd = {
       "name": "Wat is de werkbonus en kom ik in aanmerking?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "De werkbonus is een belastingvoordeel voor werknemers met een bruto maandloon tot ±€3.207. Het verlaagt je RSZ-bijdrage en bedrijfsvoorheffing, met een maximaal voordeel van ±€340 per maand bij de laagste lonen."
+        "text": "De werkbonus is een belastingvoordeel voor werknemers met een bruto maandloon tot €3.403,62 (vanaf 1 september 2026). Het verlaagt je RSZ-bijdrage en bedrijfsvoorheffing, met een maximale RSZ-vermindering van ±€300 per maand bij de laagste lonen."
       }
     },
     {
@@ -188,16 +188,16 @@ const faqs = [
         <p>De <strong>werkbonus</strong> is een belastingvoordeel voor werknemers met een laag tot gemiddeld brutoloon. Het verlaagt je RSZ-bijdrage en je bedrijfsvoorheffing, zodat je <strong>netto meer overhoudt</strong>.</p>
         <p><strong>Wie komt in aanmerking?</strong></p>
         <ul>
-          <li>Werknemers (bedienden en arbeiders) met een bruto maandloon <strong>tot ±€3.207</strong></li>
+          <li>Werknemers (bedienden en arbeiders) met een bruto maandloon <strong>tot €3.403,62</strong> (vanaf 1 september 2026)</li>
           <li>Zelfstandigen komen <strong>niet</strong> in aanmerking</li>
         </ul>
         <p><strong>Hoeveel levert het op?</strong></p>
         <ul>
-          <li>Maximaal <strong>±€340 per maand</strong> RSZ-vermindering bij de laagste lonen</li>
+          <li>Maximaal <strong>±€300 per maand</strong> RSZ-vermindering bij de laagste lonen</li>
           <li>Extra fiscale korting bovenop de RSZ-vermindering</li>
           <li>Hoe hoger je loon, hoe lager de werkbonus — tot €0 boven de grens</li>
         </ul>
-        <p><strong>Rekenvoorbeeld:</strong> Bij een brutoloon van €2.000 kan de werkbonus je nettoloon met <strong>€200-€250 per maand</strong> verhogen.</p>
+        <p><strong>Rekenvoorbeeld:</strong> Bij een brutoloon van €2.000 kan de werkbonus je nettoloon met <strong>ongeveer €260 per maand</strong> verhogen.</p>
         <p className="mt-4">
           <Link href="/werkbonus" className="inline-flex items-center text-teal-700 hover:text-teal-800 font-medium">
             👉 Bereken je werkbonus met onze tool

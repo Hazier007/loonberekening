@@ -9,7 +9,10 @@ export interface SalaryInput {
   companyCarValue: number;
   maaltijdcheques: boolean;
   maaltijdchequesValue: number;
+  statuut?: Statuut;
 }
+
+export type Statuut = 'bediende' | 'arbeider';
 
 export interface SalaryResult {
   grossMonthly: number;
@@ -88,19 +91,28 @@ function calculateProgressiveTax(yearlyTaxable: number): number {
   return tax;
 }
 
-function calculateWerkbonus(grossMonthly: number): number {
-  // Werkbonus for low wages (2025 reference amounts)
-  // Full bonus below ~€2,078.49/month, degressive until ~€3,144.45/month
-  const monthlyGross = grossMonthly;
-  
-  if (monthlyGross <= 2078.49) {
-    return 229.98; // Maximum monthly werkbonus (RSZ reduction)
-  } else if (monthlyGross <= 3144.45) {
-    // Degressive
-    const reduction = 229.98 - (0.2157 * (monthlyGross - 2078.49));
-    return Math.max(0, reduction);
-  }
+// Sociale werkbonus, geldig vanaf 1 september 2026 (RSZ administratieve instructies 2026/3)
+// https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/deductions/workers_reductions/workbonus.html
+const WERKBONUS = {
+  luikA: { lower: 2937.93, upper: 3403.62 },
+  luikB: { lower: 2300.62, upper: 2937.93 },
+  bediende: { maxA: 127.54, slopeA: 0.2739, maxB: 171.99, slopeB: 0.2699 },
+  arbeider: { maxA: 137.74, slopeA: 0.2958, maxB: 185.75, slopeB: 0.2915 },
+};
+
+function werkbonusLuik(s: number, max: number, slope: number, lower: number, upper: number): number {
+  if (s <= lower) return max;
+  if (s <= upper) return Math.max(0, max - slope * (s - lower));
   return 0;
+}
+
+export function calculateWerkbonus(grossMonthly: number, statuut: Statuut = 'bediende'): number {
+  // Werkbonus = luik A + luik B, op basis van het voltijdse refertemaandloon (S)
+  const r = WERKBONUS[statuut];
+  const { luikA, luikB } = WERKBONUS;
+  const a = werkbonusLuik(grossMonthly, r.maxA, r.slopeA, luikA.lower, luikA.upper);
+  const b = werkbonusLuik(grossMonthly, r.maxB, r.slopeB, luikB.lower, luikB.upper);
+  return a + b;
 }
 
 function calculateBijzondereBijdrage(grossMonthly: number, status: string): number {
@@ -138,15 +150,15 @@ function calculateBijzondereBijdrage(grossMonthly: number, status: string): numb
 }
 
 export function calculateSalary(input: SalaryInput): SalaryResult {
-  const { grossMonthly, status, kinderen, handicap } = input;
+  const { grossMonthly, status, kinderen, handicap, statuut = 'bediende' } = input;
   const grossYearly = grossMonthly * 12;
 
   // 1. RSZ contribution
   const rszMonthly = grossMonthly * RSZ_RATE;
   const rszYearly = rszMonthly * 12;
 
-  // 2. Werkbonus (RSZ reduction)
-  const werkbonus = calculateWerkbonus(grossMonthly);
+  // 2. Werkbonus (RSZ reduction), never more than the contribution itself
+  const werkbonus = Math.min(rszMonthly, calculateWerkbonus(grossMonthly, statuut));
 
   // 3. Effective RSZ
   const effectiveRszMonthly = Math.max(0, rszMonthly - werkbonus);

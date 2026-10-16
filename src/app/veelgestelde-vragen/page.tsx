@@ -30,7 +30,7 @@ const faqItems = [
   },
   {
     question: 'Wat is de werkbonus en kom ik in aanmerking?',
-    answer: 'De <strong>werkbonus</strong> is een vermindering van je RSZ-bijdrage voor werknemers met een laag tot gemiddeld brutoloon (tot ca. €3.208/maand). Dit verhoogt je nettoloon. Meer details op onze <a href="/werkbonus" class="text-teal-700 underline">werkbonus-pagina</a>.',
+    answer: 'De <strong>werkbonus</strong> is een vermindering van je RSZ-bijdrage voor werknemers met een laag tot gemiddeld brutoloon (tot €3.403,62/maand vanaf 1 september 2026). Dit verhoogt je nettoloon. Meer details op onze <a href="/werkbonus" class="text-teal-700 underline">werkbonus-pagina</a>.',
   },
   {
     question: 'Hoeveel vakantiegeld krijg ik?',

@@ -29,6 +29,7 @@ export default function VergelijkPage() {
     companyCarValue: 0,
     maaltijdcheques: false,
     maaltijdchequesValue: 8,
+    statuut: 'arbeider',
   });
 
   // Voor zelfstandige: hogere RSZ (20.5% ipv 13.07%)
